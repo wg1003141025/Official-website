@@ -234,7 +234,7 @@ html, body {
     text-indent: 38px;
 }
 .cuspend_content span{
-    margin-left: 25px;;
+    margin-left: 25px;
 }
 .content_header{
     font-size: 22px;
@@ -249,8 +249,6 @@ html, body {
     margin-top: 30px;
     text-align: center;
     color: #666666;
-    
-    
     position: relative;
 }
 .content_show span{
@@ -276,6 +274,7 @@ html, body {
     height:100%;
     overflow: hidden;
     margin-top: 28px;
+    margin-left: 28px;
 }
 .production{
     width: 357px;
@@ -323,6 +322,7 @@ html, body {
     margin-top: 24px;
     margin-bottom: 61px;
     overflow: hidden;
+    margin-left: 28px;
 }
 .exhibition_content li{
     width: 348px;
@@ -330,6 +330,7 @@ html, body {
     background: #ff3366;
     float: left;
     margin-right: 20px;
+    background:url(../images/map_on.png)no-repeat -221px -147px;
     
 }
 .help_header{
@@ -339,7 +340,10 @@ html, body {
 }
 .help_content{
     margin-top: 20px;
-    
+    width: 100%;
+    height: 100%;
+    margin-left: 28px;
+    overflow: hidden;
 }
 .helpc_left{
     width: 600px;
@@ -444,11 +448,27 @@ html, body {
 }
 .box_f div{
     float: left;
-    margin-right: 160px;;
+    margin-right: 150px;
+   
 }
 .box_f ul{
     margin-top: 40px;
 }
 .box_f li{
     margin-top: 10px;
+    font-size: 14px;
+}
+.box_f p{
+    font-size: 18px;
+}
+.box_f div:nth-child(2){
+    font-size: 18px;
+}
+.box_f div:nth-child(5){
+    font-size: 18px;
+}
+.box_f li:hover{
+    text-decoration:underline;
+    color: #898989;
+    cursor: pointer;
 }

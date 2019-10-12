@@ -11,7 +11,6 @@
 	<script type="text/javascript" src="javascript/jquery.easing.main.js"></script>
 	<script type="text/javascript" src="javascript/script.js"></script>
 	<script type="text/javascript" src="javascript/swiper.min.js"></script>
-
 	<link rel="stylesheet" href="javascript/swiper.min.css">
 	<style type="text/css">
 		body,
@@ -41,13 +40,18 @@
 			padding: 0;
 			margin: 0;
 		}
-
 		body {
 			font-size: 12px;
 			font-family: "微软雅黑";
 			color: #000000;
 			background-color: #FFFFFF;
 			overflow-x: hidden;
+
+		}
+
+		html,
+		body {
+			scroll-behavior: smooth
 		}
 
 		ul,
@@ -110,6 +114,7 @@
 			/* background: url(images/BeiJing.png); */
 			position: relative;
 			height: 752px;
+			overflow: hidden;
 		}
 
 		.section:nth-child(2) {
@@ -149,7 +154,7 @@
 			overflow: hidden;
 		}
 
-		.section:nth-child(6) {
+		.section:nth-child(7) {
 			background: #fff;
 			width: 100%;
 			height: 100%;
@@ -161,9 +166,9 @@
 			height: 130px;
 			line-height: 130px;
 			margin: 0 auto;
-			position: absolute;
-			left: 106px;
-			top: 0;
+			position: relative;
+			left: 0;
+			top: -772px;
 			z-index: 999;
 
 		}
@@ -178,11 +183,11 @@
 		.middle {
 			width: 1200px;
 			height: 100%;
-			margin: 78px auto;
+			margin: 0 auto;
 			text-align: center;
-			position: absolute;
-			left: 175px;
-			top: 101px;
+			position: relative;
+			left: 0;
+			top: -700px;
 			z-index: 999;
 		}
 
@@ -253,7 +258,6 @@
 			text-align: center;
 			font-size: 18px;
 			background: #fff;
-
 			/* Center slide text vertically */
 			display: -webkit-box;
 			display: -ms-flexbox;
@@ -284,12 +288,16 @@
 			color: #fff;
 			margin-top: 80px;
 		}
-		.shade{
+
+		.shade {
 			width: 100%;
 			height: 100%;
-			background: rgba(000,000,000,0.3);
+			background: rgba(000, 000, 000, 0.3);
 			overflow: hidden;
-			
+		}
+
+		button {
+			cursor: pointer;
 		}
 	</style>
 </head>
@@ -298,148 +306,156 @@
 
 	<div id="dowebok">
 		<!-- 首部相应说明 -->
-		<div class="section">
-			<div class="swiper-container">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide" style="background:url(images/Beijing.png)"></div>
-					<div class="swiper-slide" style="background:url(images/Beijing.png)"></div>
-					<div class="swiper-slide" style="background:url(images/Beijing.png)"></div>
-					<div class="swiper-slide" style="background:url(images/Beijing.png)"></div>
-					<div class="swiper-slide" style="background:url(images/Beijing.png)"></div>
-					<div class="swiper-slide" style="background:url(images/Beijing.png)"></div>
-					<div class="swiper-slide" style="background:url(images/Beijing.png)"></div>
-					<div class="swiper-slide" style="background:url(images/Beijing.png)"></div>
-					<div class="swiper-slide" style="background:url(images/Beijing.png)"></div>
-					<div class="swiper-slide" style="background:url(images/Beijing.png)"></div>
-				</div>
-				<!-- Add Pagination -->
-				<div class="swiper-pagination"></div>
-				<!-- Add Arrows -->
-				<!--  <div class="swiper-button-next"></div>
+		<div id="roof">
+			<div class="section">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide" style="background:url(images/Beijing.png)"></div>
+						<div class="swiper-slide" style="background:url(images/Beijing.png)"></div>
+						<div class="swiper-slide" style="background:url(images/Beijing.png)"></div>
+						<div class="swiper-slide" style="background:url(images/Beijing.png)"></div>
+						<div class="swiper-slide" style="background:url(images/Beijing.png)"></div>
+						<div class="swiper-slide" style="background:url(images/Beijing.png)"></div>
+						<div class="swiper-slide" style="background:url(images/Beijing.png)"></div>
+						<div class="swiper-slide" style="background:url(images/Beijing.png)"></div>
+						<div class="swiper-slide" style="background:url(images/Beijing.png)"></div>
+						<div class="swiper-slide" style="background:url(images/Beijing.png)"></div>
+					</div>
+					<!-- Add Pagination -->
+					<!--<div class="swiper-pagination"></div>-->
+					<!-- 下面导航点 -->
+					<!-- Add Arrows -->
+					<!-- <div class="swiper-button-next"></div>
 				<div class="swiper-button-prev"></div> -->
+					<!--两个左右切换按钮-->
 
+				</div>
+				<!-- 头部 -->
+				<div class="header">
+					<span class="minlogo"><img src="images/minlogo.png" alt="">恺思睿思</span>
+					<ul class="nav">
+						<li>首页</li>
+						<li>产品</li>
+						<li>解决方案</li>
+						<li>加盟合作</li>
+						<li>售后支持</li>
+						<li>关于我们</li>
+						<li><button>登陆</button></li>
+						<li style="margin-left: 13px"><button>注册</button></li>
+					</ul>
+				</div>
+				<div class="middle">
+					<span>智能营销平台</span>
+					<p>专注中小型成长企业营销管理解决方案</p>
+					<p><button>立即体验</button></p>
+				</div>
 			</div>
-			<!-- 头部 -->
-			<div class="header">
-				<span class="minlogo"><img src="images/minlogo.png" alt="">恺思睿思</span>
-				<ul class="nav">
-					<li>首页</li>
-					<li>产品</li>
-					<li>解决方案</li>
-					<li>加盟合作</li>
-					<li>售后支持</li>
-					<li>关于我们</li>
-					<li><button>登陆</button></li>
-					<li style="margin-left: 13px"><button>注册</button></li>
-				</ul>
-			</div>
-			<div class="middle">
-				<span>智能营销平台</span>
-				<p>专注中小型成长企业营销管理解决方案</p>
-				<p><button>立即体验</button></p>
-			</div> -->
 		</div>
 		<!-- 产品展示 -->
-		<div class="section">
-			<!--内容-->
-			<div class="content">
-				<div class="content_header">
-					<span>我们为企业提供从线索挖掘、商机触达、客户管理到成单分析的全流程智能销售解决方案</span>
-					<p>帮助大中小型企业在销售端降低销售成本，提升销售业绩</p>
-				</div>
-				<div class="content_show">
-					<div class="cts_header">
-						<div class="wire_left"></div>
-						<span>产品展示</span>
-						<p>PRODUCTS SHOW</p>
-						<div class="wire_right"></div>
+		<div id="product display">
+			<div class="section">
+				<!--内容-->
+				<div class="content">
+					<div class="content_header">
+						<span>我们为企业提供从线索挖掘、商机触达、客户管理到成单分析的全流程智能销售解决方案</span>
+						<p>帮助大中小型企业在销售端降低销售成本，提升销售业绩</p>
 					</div>
-					<div class="cts_content">
-						<div class="production">
-							<div class="shade">
-							<p class="lo"><img src="images/house.png" alt=""></p>
-							<p class="explain">CRM</p>
-							<p class="hm">
-								公司利用人工智能、大数据等新代创新技术，
-								面向企业提供“营销自动化”和“销售自动化”
-								一体化的商业智能解决方案，帮助中小企业
-								进行数字化营销智能升级迭代。通过不断挖
-								掘和分析全网信息，构建出全网最全的、超
-								过1. 4亿商业实体的知识图谱，并在此基础
-								上结合NLP、机器学习、算法等领先技术，打
-								造出包含线索平台、销售过程管理、质量度
-								模型、全链路销售渠道的完整解决方案，帮助
-								大中小型企业在销售环节降低成本，有效提升
-								销售业绩。
-							</p>
-							<p><button class="consult">立即咨询</button></p>
+					<div class="content_show">
+						<div class="cts_header">
+							<div class="wire_left"></div>
+							<span>产品展示</span>
+							<p>PRODUCTS SHOW</p>
+							<div class="wire_right"></div>
 						</div>
+						<div class="cts_content">
+							<div class="production">
+								<div class="shade">
+									<p class="lo"><img src="images/house.png" alt=""></p>
+									<p class="explain">CRM</p>
+									<p class="hm">
+										公司利用人工智能、大数据等新代创新技术，
+										面向企业提供“营销自动化”和“销售自动化”
+										一体化的商业智能解决方案，帮助中小企业
+										进行数字化营销智能升级迭代。通过不断挖
+										掘和分析全网信息，构建出全网最全的、超
+										过1. 4亿商业实体的知识图谱，并在此基础
+										上结合NLP、机器学习、算法等领先技术，打
+										造出包含线索平台、销售过程管理、质量度
+										模型、全链路销售渠道的完整解决方案，帮助
+										大中小型企业在销售环节降低成本，有效提升
+										销售业绩。
+									</p>
+									<p><button class="consult">立即咨询</button></p>
+								</div>
+							</div>
+							<div class="production">
+								<div class="shade">
+									<p class="lo"><img src="images/house.png" alt=""></p>
+									<p class="explain">大数据智能平台</p>
+									<p class="hm">
+										公司利用人工智能、大数据等新代创新技术，
+										面向企业提供“营销自动化”和“销售自动化”
+										一体化的商业智能解决方案，帮助中小企业
+										进行数字化营销智能升级迭代。通过不断挖
+										掘和分析全网信息，构建出全网最全的、超
+										过1. 4亿商业实体的知识图谱，并在此基础
+										上结合NLP、机器学习、算法等领先技术，打
+										造出包含线索平台、销售过程管理、质量度
+										模型、全链路销售渠道的完整解决方案，帮助
+										大中小型企业在销售环节降低成本，有效提升
+										销售业绩。
+									</p>
+									<p><button class="consult">立即咨询</button></p>
+								</div>
+							</div>
+							<div class="production">
+								<div class="shade">
+									<p class="lo"><img src="images/house.png" alt=""></p>
+									<p class="explain">大数据智能平台</p>
+									<p class="hm">
+										公司利用人工智能、大数据等新代创新技术，
+										面向企业提供“营销自动化”和“销售自动化”
+										一体化的商业智能解决方案，帮助中小企业
+										进行数字化营销智能升级迭代。通过不断挖
+										掘和分析全网信息，构建出全网最全的、超
+										过1. 4亿商业实体的知识图谱，并在此基础
+										上结合NLP、机器学习、算法等领先技术，打
+										造出包含线索平台、销售过程管理、质量度
+										模型、全链路销售渠道的完整解决方案，帮助
+										大中小型企业在销售环节降低成本，有效提升
+										销售业绩。
+									</p>
+									<p><button class="consult">立即咨询</button></p>
+								</div>
+							</div>
 						</div>
-						<div class="production">
-							<div class="shade">
-							<p class="lo"><img src="images/house.png" alt=""></p>
-							<p class="explain">大数据智能平台</p>
-							<p class="hm">
-								公司利用人工智能、大数据等新代创新技术，
-								面向企业提供“营销自动化”和“销售自动化”
-								一体化的商业智能解决方案，帮助中小企业
-								进行数字化营销智能升级迭代。通过不断挖
-								掘和分析全网信息，构建出全网最全的、超
-								过1. 4亿商业实体的知识图谱，并在此基础
-								上结合NLP、机器学习、算法等领先技术，打
-								造出包含线索平台、销售过程管理、质量度
-								模型、全链路销售渠道的完整解决方案，帮助
-								大中小型企业在销售环节降低成本，有效提升
-								销售业绩。
-							</p>
-							<p><button class="consult">立即咨询</button></p>
-						</div>
-						</div>
-						<div class="production">
-							<div class="shade">
-							<p class="lo"><img src="images/house.png" alt=""></p>
-							<p class="explain">大数据智能平台</p>
-							<p class="hm">
-								公司利用人工智能、大数据等新代创新技术，
-								面向企业提供“营销自动化”和“销售自动化”
-								一体化的商业智能解决方案，帮助中小企业
-								进行数字化营销智能升级迭代。通过不断挖
-								掘和分析全网信息，构建出全网最全的、超
-								过1. 4亿商业实体的知识图谱，并在此基础
-								上结合NLP、机器学习、算法等领先技术，打
-								造出包含线索平台、销售过程管理、质量度
-								模型、全链路销售渠道的完整解决方案，帮助
-								大中小型企业在销售环节降低成本，有效提升
-								销售业绩。
-							</p>
-							<p><button class="consult">立即咨询</button></p>
-						</div>
-						</div>
-
 					</div>
 				</div>
 			</div>
 		</div>
 		<!-- 用户示例 -->
-		<div class="section">
-			<!--展示 -->
-			<div class="exhibition">
-				<div class="exhibition_header">
-					为甚麽KSRS我们是智能领域的开创者
-				</div>
-				<div class="exhibition_content">
-					<ul>
-						<li style="background:url(images/map_on.png)no-repeat -89px;"></li>
-						<li style="background:url(images/map_two.png)no-repeat -124px;"></li>
-						<li style="background:url(images/map_three.png)no-repeat -89px;"></li>
-						<li style="margin-top: 20px;background:url(images/map_four.png)no-repeat -89px;"></li>
-						<li style="margin-top: 20px;background:url(images/map_five.png)no-repeat -89px;"></li>
-						<li style="margin-top: 20px;background:url(images/map_six.png)no-repeat -89px;"></li>
-					</ul>
+		<div id="example">
+			<div class="section">
+				<!--展示 -->
+				<div class="exhibition">
+					<div class="exhibition_header">
+						为甚麽KSRS我们是智能领域的开创者
+					</div>
+					<div class="exhibition_content">
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li style="margin-top: 20px"></li>
+							<li style="margin-top: 20px"></li>
+							<li style="margin-top: 20px"></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
 		<!-- 公司业务方向 -->
+		<div id="direction">
 		<div class="section">
 			<div class="help">
 				<div class="help_header">
@@ -456,7 +472,9 @@
 				</div>
 			</div>
 		</div>
+		</div>
 		<!-- 产品演示 -->
+		<div id="demonstration">
 		<div class="section">
 			<div class="boxs">
 				<div class="headline">
@@ -472,7 +490,9 @@
 				</div>
 			</div>
 		</div>
+		</div>
 		<!-- 公司简介 -->
+		<div id="brief introduction">
 		<div class="section">
 			<div class="boxs">
 				<div class="sec_header">
@@ -501,6 +521,7 @@
 					</div>
 				</div>
 			</div>
+		</div>
 		</div>
 		<div class="section"></div>
 		<!--尾部 -->
@@ -551,10 +572,19 @@
 					<li><img src="images/logo.png" alt=""><span>产品咨询</span></li>
 				</ul>
 			</div>
-
 		</div>
+		<!-- 锚点 -->
+		<!-- <div class="anchor">
+			<ul>
+				<li><a href="#roof">顶部</a></li>
+				<li><a href="#product display">展示</a></li>
+				<li><a href="#example">示例</a></li>
+				<li><a href="#direction">方向</a></li>
+				<li><a href="#demonstration">演示</a></li>
+				<li><a href="#brief introduction">简介</a></li>
+			</ul>
+		</div> -->
 	</div>
-
 </body>
 
 </html>
