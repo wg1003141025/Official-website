@@ -1,0 +1,454 @@
+/**
+ * fullPage 1.4.5
+ * https://github.com/alvarotrigo/fullPage.js
+ * MIT licensed
+ *
+ * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+ */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+#superContainer {
+    height: 100%;
+    position: relative;
+}
+.section {
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.slide {
+    float: left;
+}
+.slide, .slidesContainer {
+    height: 100%;
+    display: block;
+}
+.slides {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.section.table, .slide.table {
+    display: table;
+    width: 100%;
+}
+.tableCell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+.slidesContainer {
+    float: left;
+    position: relative;
+}
+.controlArrow {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    margin-top: -38px;
+}
+.controlArrow.prev {
+    left: 15px;
+    width: 0;
+    border-width: 38.5px 34px 38.5px 0;
+    border-color: transparent #fff transparent transparent;
+}
+.controlArrow.next {
+    right: 15px;
+    border-width: 38.5px 0 38.5px 34px;
+    border-color: transparent transparent transparent #fff;
+}
+.scrollable {
+    overflow: scroll;
+}
+.easing {
+    -webkit-transition: all 0.7s ease-out;
+    -moz-transition: all 0.7s ease-out;
+    -o-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+}
+#fullPage-nav {
+    position: fixed;
+    z-index: 100;
+    margin-top: -32px;
+    top: 50%;
+    opacity: 1;
+}
+#fullPage-nav.right {
+    right: 17px;
+}
+#fullPage-nav.left {
+    left: 17px;
+}
+.fullPage-slidesNav {
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    opacity: 1;
+}
+.fullPage-slidesNav.bottom {
+    bottom: 17px;
+}
+.fullPage-slidesNav.top {
+    top: 17px;
+}
+#fullPage-nav ul,
+.fullPage-slidesNav ul {
+  margin: 0;
+  padding: 0;
+}
+#fullPage-nav li,
+.fullPage-slidesNav li {
+    display: block;
+    width: 14px;
+    height: 13px;
+    margin: 7px;
+    position:relative;
+}
+.fullPage-slidesNav li {
+    display: inline-block;
+}
+#fullPage-nav li a,
+.fullPage-slidesNav li a {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+#fullPage-nav li .active span,
+.fullPage-slidesNav .active span {
+    background: #333;
+}
+#fullPage-nav span,
+.fullPage-slidesNav span {
+    top: 2px;
+    left: 2px;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #000;
+    background: rgba(0, 0, 0, 0);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+.fullPage-tooltip {
+    position: absolute;
+    color: #fff;
+    font-size: 14px;
+    font-family: arial, helvetica, sans-serif;
+    top: -2px;
+}
+.fullPage-tooltip.right {
+    right: 20px;
+}
+.fullPage-tooltip.left {
+    left: 20px;
+}
+.nav{
+    float: left;
+    margin-left: 116px;
+}
+.nav button{
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid #fff;
+    width: 97px;
+    height: 36px;
+    border-radius: 20%;
+    color: #fff;
+}
+.header li{
+    float: left;
+    color: #fff;
+    font-size: 20px;
+    padding-left: 22px;
+}
+.middle span{
+    font-size: 110px;
+    color: #fff;
+    font-weight: 5;
+    text-shadow: black -5px -5px 6px;
+    letter-spacing:68px;
+    text-indent:10px;
+}
+.middle p{
+    font-size: 24px;
+    color: #fff;
+    letter-spacing:38px;
+    text-indent:10px;
+}
+.middle button{
+    width: 150px;
+    height: 61px;
+    border: 2px solid #fff;
+    background: none;
+    border-radius: 14%;
+    color: #fff;
+    font-size: 22px;
+    margin-top: 80px;
+}
+.cuspend_header{
+    width: 100%;
+    height: 84px;
+    background: #305FC9;
+    text-align: center;
+    line-height: 84px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10% 10% 0 0;
+}
+.cuspend_content {
+    width: 100%;
+    height: 218px;
+    background: #ffffff;
+}
+.cuspend_content ul{
+    width: 100%;
+    height: 100%;
+}
+.cuspend_content li{
+    width: 200px;
+    height: 55px;
+    border: 2px solid blue;
+    margin: 10px auto;
+    text-indent: 20px;
+    border-radius: 20%;
+    line-height: 55px;
+    font-size: 20px;
+    color: #808080;
+    text-indent: 38px;
+}
+.cuspend_content span{
+    margin-left: 25px;;
+}
+.content_header{
+    font-size: 22px;
+    color: #808080;
+    letter-spacing:8px;
+    text-align: center;
+}
+.content_header p{
+    margin-top: 20px;
+}
+.content_show{
+    margin-top: 30px;
+    text-align: center;
+    color: #666666;
+    
+    
+    position: relative;
+}
+.content_show span{
+    font-size: 32px;letter-spacing:20px;
+}
+.wire_left{
+    width: 480px;
+    height: 1px;
+    background: #898989;
+    position: absolute;
+    top: 22px; 
+}
+.wire_right{
+    width: 480px;
+    height: 1px;
+    background: #898989;
+    position: absolute;
+    top: 22px; 
+    right: 18px;
+}
+.cts_content{
+    width: 100%;
+    height:100%;
+    overflow: hidden;
+    margin-top: 28px;
+}
+.production{
+    width: 357px;
+    height: 514px;
+    background:url(../images/love_on.png);
+    overflow: hidden;
+    margin-right: 20px;
+    float: left;
+}
+.lo{
+    margin-top: 110px;
+}
+.explain{
+    color: #fff;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.hm{
+    padding-left: 14px;
+    padding-right: 14px;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.consult{
+    border: 2px solid #fff;
+    background: none;
+    width: 188px;
+    height: 64px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 64px;
+    font-size: 26px;
+    color: #fff;
+    border-radius: 14%;
+}
+.exhibition_header{
+    text-align: center;
+    font-size: 52px;
+    color: #666363;
+}
+.exhibition_content{
+    width: 100%;
+    height: 100%;
+    margin-top: 24px;
+    margin-bottom: 61px;
+    overflow: hidden;
+}
+.exhibition_content li{
+    width: 348px;
+    height: 297px;
+    background: #ff3366;
+    float: left;
+    margin-right: 20px;
+    
+}
+.help_header{
+    color: #666666;
+    font-size: 48px;
+    text-align: center;
+}
+.help_content{
+    margin-top: 20px;
+    
+}
+.helpc_left{
+    width: 600px;
+    height: 600px;
+    float: left;
+}
+.helpc_left img{
+    width: 100%;
+    height: 100%;
+}
+.helpc_right{
+    float: left;
+    width: 600px;
+    height: 500px;
+}
+.helpc_right p:nth-child(1){
+    color: #979797;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left:47px;
+}
+.helpc_right p:nth-child(2){
+    color: #979797;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left:47px;
+    margin-top: 181px;
+    width: 450px;
+    letter-spacing:5px;
+    text-align: center;
+}
+.headline{
+    text-align: center;
+    font-size: 40px;
+}
+.se_content{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-top: 43px;
+}
+.sect_left{
+    font-size: 50px;
+    margin-top: 348px;
+    float: left;
+}
+.sect_right{
+    width: 800px;
+    height: 470px;
+    float: left;
+    margin-left: 80px;
+}
+.sect_right img{
+    width: 100%;
+    height: 100%;
+}
+.sec_header{
+    text-align: center;
+    width:100%;
+    color: #666666;
+    font-size: 48px;
+    font-weight: 9
+}
+.sec_left{
+    width: 400px;
+    height: 400px;
+    margin-left: 280px;
+    margin-top: 140px;
+    float: left;
+}
+.sec_left img{
+    width: 100%;
+    height: 100%;
+}
+.sec_right{
+    width: 520px;
+    height: 370px;
+    float: left;
+    margin-top: 140px;;
+}
+.right_img{
+   width: 100px;
+    height: 100px;
+    float: left;
+    margin-top: 200px;;
+}
+.right_img img{
+    width: 100%;
+    height: 100%;
+}
+.right_text{
+    float: left;
+    width: 200px;
+    font-size: 12px;
+    margin-top: 102px;
+    margin-left: 54px;
+    color: #666;
+}
+.box_f{
+    width: 1200px;
+    margin: 50px auto;
+}
+.box_f div{
+    float: left;
+    margin-right: 160px;;
+}
+.box_f ul{
+    margin-top: 40px;
+}
+.box_f li{
+    margin-top: 10px;
+}
