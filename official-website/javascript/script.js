@@ -1,18 +1,5 @@
-$( function () {
+$(function () {
 	// 写js在这里写
-	$(".section").eq(0).click(function(){
-		
-	})
-
-
-
-
-	
-
-
-
-
-
 
 	// $('#dowebok').fullpage({
 	// 	scrollingSpeed : 700,						  // 滚动速度，单位为毫秒,默认为700
@@ -43,18 +30,18 @@ $( function () {
 		spaceBetween: 30,
 		centeredSlides: true,
 		autoplay: {
-		  delay: 2500,
-		  disableOnInteraction: false,
+			delay: 2500,
+			disableOnInteraction: false,
 		},
 		pagination: {
-		  el: '.swiper-pagination',
-		  clickable: true,
+			el: '.swiper-pagination',
+			clickable: true,
 		},
 		navigation: {
-		  nextEl: '.swiper-button-next',
-		  prevEl: '.swiper-button-prev',
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
 		},
 		loop: 1
-	  });
-
+	});
+	
 })
