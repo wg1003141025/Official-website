@@ -173,28 +173,29 @@ html, body {
     padding-left: 22px;
 }
 .middle span{
-    font-size: 110px;
+    font-size: 95px;
     color: #fff;
     font-weight: 5;
     text-shadow: black -5px -5px 6px;
     letter-spacing:68px;
-    text-indent:10px;
+
 }
-.middle p{
-    font-size: 24px;
+.middle p:nth-child(2){
+    font-size: 21px;
     color: #fff;
     letter-spacing:38px;
     text-indent:10px;
 }
 .middle button{
-    width: 150px;
-    height: 61px;
+    padding: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border: 2px solid #fff;
     background: none;
-    border-radius: 14%;
+    border-radius: 8%;
     color: #fff;
     font-size: 22px;
-    margin-top: 80px;
+    margin-top: 216px;
 }
 .cuspend_header{
     width: 100%;
