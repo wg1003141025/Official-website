@@ -169,11 +169,11 @@ html, body {
 .header li{
     float: left;
     color: #fff;
-    font-size: 20px;
+    font-size: 19px;
     padding-left: 22px;
 }
 .middle span{
-    font-size: 95px;
+    font-size: 90px;
     color: #fff;
     font-weight: 5;
     text-shadow: black -5px -5px 6px;
@@ -199,37 +199,35 @@ html, body {
 }
 .cuspend_header{
     width: 100%;
-    height: 84px;
+   
     background: #305FC9;
     text-align: center;
-    line-height: 84px;
+    line-height: 63px;
     color: #fff;
     font-size: 20px;
     border-radius: 10% 10% 0 0;
 }
 .cuspend_content {
     width: 100%;
-    height: 218px;
+   
     background: #ffffff;
 }
 .cuspend_content ul{
     width: 100%;
-    height: 100%;
 }
 .cuspend_content li{
-    width: 200px;
-    height: 55px;
+    width: 160px;
+    
     border: 2px solid blue;
     margin: 10px auto;
-    text-indent: 20px;
     border-radius: 20%;
     line-height: 55px;
     font-size: 20px;
     color: #808080;
-    text-indent: 38px;
+    text-indent: 10px;
 }
 .cuspend_content span{
-    margin-left: 25px;
+    margin-left: 16px;
 }
 .content_header{
     font-size: 22px;
@@ -267,17 +265,15 @@ html, body {
 }
 .cts_content{
     width: 100%;
-    height:100%;
     overflow: hidden;
     margin-top: 28px;
     margin-left: 28px;
 }
 .production{
-    width: 357px;
-    height: 514px;
+    width: 30%;
     background:url(../images/love_on.png);
     overflow: hidden;
-    margin-right: 20px;
+    margin-left: 18px;
     float: left;
 }
 .lo{
@@ -301,8 +297,7 @@ html, body {
     background: none;
     width: 188px;
     height: 64px;
-    margin-top: 20px
-    ;
+    margin-top: 20px;
     text-align: center;
     line-height: 64px;
     font-size: 26px;
@@ -316,18 +311,16 @@ html, body {
 }
 .exhibition_content{
     width: 100%;
-    height: 100%;
     margin-top: 24px;
     margin-bottom: 61px;
     overflow: hidden;
     margin-left: 28px;
 }
 .exhibition_content li{
-    width: 358px;
+    width: 30.6%;
     height: 297px;
-    background: #ff3366;
     float: left;
-    margin-right: 20px;
+    margin-right: 18px;
     background:url(../images/map_on.png)no-repeat -221px -147px;
     
 }
@@ -380,7 +373,6 @@ html, body {
 }
 .se_content{
     width: 100%;
-    height: 100%;
     overflow: hidden;
     margin-top: 43px;
 }
@@ -391,7 +383,7 @@ html, body {
 }
 .sect_right{
     width: 800px;
-    height: 470px;
+  
     float: left;
     margin-left: 90px;
 }
@@ -419,7 +411,6 @@ html, body {
 }
 .sec_right{
     width: 520px;
-    height: 370px;
     float: left;
     margin-top: 140px;
 }
