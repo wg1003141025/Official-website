@@ -1,6 +1,6 @@
 $(function () {
 	// 写js在这里写
-
+			
 	// $('#dowebok').fullpage({
 	// 	scrollingSpeed : 700,						  // 滚动速度，单位为毫秒,默认为700
 	// 	navigation :true,							  // 是否显示项目导航
