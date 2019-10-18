@@ -4,6 +4,9 @@ $(function () {
 	$(".cuspend_header").eq(0).click(function () {
 		$(".cuspend_content").eq(0).show()
 	})
+	$("#dn").click(function(){
+		$(".cuspend").eq(0).hide()
+	})
 	// $(".product").eq(0).hide()
 	// $(".ho").eq(0).hover(function(){
 	// 	$(".product").eq(0).show()

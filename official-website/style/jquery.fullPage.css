@@ -159,20 +159,21 @@ html, body {
     margin-left: 116px;
     line-height: 100px;
     
+    
 }
 .nav button{
     background: rgba(0, 0, 0, 0);
     border: 1px solid #fff;
-    width: 97px;
-    height: 36px;
-    border-radius: 8px;
+    width: 80px;
+    height: 30px;
+    border-radius: 6px;
     color: #fff;
 }
 .header li{
     float: left;
-    /* color: #fff; */
-    font-size: 19px;
-    /* padding-left: 22px; */
+   
+    font-size: 16px;
+    
 }
 .middle span{
     font-size: 90px;
@@ -185,29 +186,28 @@ html, body {
 .middle p:nth-child(2){
     font-size: 21px;
     color: #fff;
-    letter-spacing:38px;
-    text-indent:10px;
+    letter-spacing:31px;
+    text-indent:-35px;
 }
 .middle button{
-    padding: 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border: 2px solid #fff;
     background: none;
     border-radius: 8%;
     color: #fff;
-    font-size: 22px;
+    font-size: 18px;
     margin-top: 216px;
 }
 .cuspend_header{
     width: 100%;
-   
     background: #305FC9;
     text-align: center;
     line-height: 63px;
     color: #fff;
     font-size: 20px;
-    border-radius: 10% 10% 0 0;
+    border-radius:8px;
 }
 .cuspend_content {
     width: 100%;
@@ -218,13 +218,12 @@ html, body {
     width: 100%;
 }
 .cuspend_content li{
-    width: 160px;
-    
+    width: 142px;
     border: 2px solid blue;
-    margin: 10px auto;
+    margin: 6px auto;
     border-radius: 20%;
-    line-height: 55px;
-    font-size: 20px;
+    line-height: 46px;
+    font-size: 16px;
     color: #808080;
     text-indent: 10px;
 }
@@ -232,7 +231,7 @@ html, body {
     margin-left: 16px;
 }
 .content_header{
-    font-size: 22px;
+    font-size: 16px;
     color: #808080;
     letter-spacing:8px;
     text-align: center;
@@ -247,7 +246,7 @@ html, body {
     position: relative;
 }
 .content_show span{
-    font-size: 32px;
+    font-size: 28px;
     letter-spacing:20px;
 }
 .wire_left{
@@ -309,18 +308,17 @@ html, body {
 .consult{
     border: 2px solid #fff;
     background: none;
-    width: 188px;
-    height: 64px;
+    width: 168px;
+    height: 52px;
     margin-top: 20px;
     text-align: center;
-    line-height: 64px;
-    font-size: 26px;
+    font-size: 21px;
     color: #fff;
-    border-radius: 14%;
+    border-radius: 5px;
 }
 .exhibition_header{
     text-align: center;
-    font-size: 40px;
+    font-size: 33px;
     color: #666363;
 }
 .exhibition_content{
@@ -340,7 +338,7 @@ html, body {
 }
 .help_header{
     color: #666666;
-    font-size: 40px;
+    font-size: 33px;
     text-align: center;
 }
 .help_content{
@@ -366,7 +364,7 @@ html, body {
 }
 .helpc_right p:nth-child(1){
     color: #979797;
-    font-size: 34px;
+    font-size: 32px;
     font-weight: bold;
     margin-left:47px;
 }
@@ -382,7 +380,7 @@ html, body {
 }
 .headline{
     text-align: center;
-    font-size: 40px;
+    font-size: 33px;
     color: #666;
 }
 .se_content{
@@ -391,7 +389,7 @@ html, body {
     margin-top: 43px;
 }
 .sect_left{
-    font-size: 38px;
+    font-size: 34px;
     margin-top: 348px;
     float: left;
 }
@@ -409,7 +407,7 @@ html, body {
     text-align: center;
     width:100%;
     color: #666666;
-    font-size: 40px;
+    font-size: 33px;
     font-weight: 9;
 }
 .sec_left{
@@ -670,7 +668,7 @@ color: #000;
     border-bottom: 8px solid #fff;
     border-left: 8px solid transparent;
     position: absolute;
-    right: 431px;
+    right: 390px;
     top: 64px;
     display: none
 }
@@ -685,7 +683,7 @@ color: #000;
     border-bottom: 8px solid #fff;
     border-left: 8px solid transparent;
     position: absolute;
-    right: 533px;
+    right: 475px;
     top: 66px;
     display: none
 }
@@ -700,10 +698,19 @@ color: #000;
     border-bottom: 8px solid #fff;
     border-left: 8px solid transparent;
     position: absolute;
-    right: 608px;
+    right: 535px;
     top: 63px;
     display: none
 }
 .ho:hover .triangle_on{
     display: block;
+}
+#dn{
+    position: relative;
+    left: 26px;
+    top: -14px
+}
+.cuspend_content li img{
+    width: 21px;
+    height: 21px;
 }
