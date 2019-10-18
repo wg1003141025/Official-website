@@ -1,9 +1,12 @@
 $(function () {
-	// 写js在这里写
+	
 	$(".cuspend_content").eq(0).hide()
+	$("#dn").hide()
 	$(".cuspend_header").eq(0).click(function () {
 		$(".cuspend_content").eq(0).show()
+		$("#dn").show()
 	})
+	
 	$("#dn").click(function(){
 		$(".cuspend").eq(0).hide()
 	})
