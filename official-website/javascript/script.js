@@ -1,6 +1,21 @@
 $(function () {
 	// 写js在这里写
-			
+	$(".cuspend_content").eq(0).hide()
+	$(".cuspend_header").eq(0).click(function () {
+		$(".cuspend_content").eq(0).show()
+	})
+	// $(".product").eq(0).hide()
+	// $(".ho").eq(0).hover(function(){
+	// 	$(".product").eq(0).show()
+	// 	},function(){
+	// 		$(".product").eq(0).hide()
+	// 	})	
+	// $(".ho").mouseover(function () {
+	// 	$(".product").eq(0).show()
+	// });
+	// $(".product").mouseout(function () {
+	// 	$(".product").eq(0).hide();
+	// });
 	// $('#dowebok').fullpage({
 	// 	scrollingSpeed : 700,						  // 滚动速度，单位为毫秒,默认为700
 	// 	navigation :true,							  // 是否显示项目导航
@@ -43,5 +58,5 @@ $(function () {
 		},
 		loop: 1
 	});
-	
+
 })

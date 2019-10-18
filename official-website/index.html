@@ -105,18 +105,19 @@
 			margin: 0 auto;
 			margin-top: 80px;
 		}
+
 		.section:nth-child(1) {
 			position: relative;
 			width: 100%;
 			height: 100% !important;
-			
+
 			overflow: hidden;
 		}
 
 		.section:nth-child(2) {
 			background: #fff;
 			width: 100%;
-			
+			background: #ff3366;
 			overflow: hidden;
 		}
 
@@ -124,54 +125,56 @@
 			background: #fff;
 
 			width: 100%;
-			
+
 			overflow: hidden;
 		}
 
 		.section:nth-child(4) {
 			background: #fff;
 			width: 100%;
-			
+
 			overflow: hidden;
 		}
 
 		.section:nth-child(5) {
 			background: #fff;
 			width: 100%;
-			
+
 			overflow: hidden;
 		}
 
 		.section:nth-child(6) {
 			background: #fff;
 			width: 100%;
-			
+
 			overflow: hidden;
 		}
 
 		.section:nth-child(7) {
 			background: #fff;
 			width: 100%;
-			
+
 			overflow: hidden;
 		}
 
 		.header {
 			width: 1200px;
-			line-height: 130px;
+
+			height: 86px;
 			margin: 0 auto;
-			position: relative;
-			left: 0;
-			top: -772px;
-			z-index: 999;
+
 			overflow: hidden;
 
 		}
+
+
+
 		.minlogo {
 			color: #fff;
-			font-size: 48px;
+			font-size: 35px;
 			font-weight: 10;
 			float: left;
+			line-height: 100px;
 		}
 
 		.middle {
@@ -197,6 +200,7 @@
 		#fullPage-nav.right {
 			margin-top: -108px !important;
 		}
+
 		.content {
 			width: 1200px;
 			margin: 0 auto;
@@ -292,20 +296,48 @@
 			z-index: 1111111;
 			color: #fff !important;
 		}
-		#roof{
+
+		#roof {
 			height: 753px;
 			margin-bottom: 50px;
 		}
-		#example{
+
+		#example {
 			margin-bottom: 40px;
 		}
-		#productDisplay{
+
+		#productDisplay {
 			margin-bottom: 40px
 		}
-		#dowebok{
+
+		#dowebok {
 			width: 100%;
 			height: 100%;
-		
+
+		}
+
+		.boxx {
+			width: 100%;
+			height: 80px;
+
+			position: relative;
+			left: 0;
+			top: -772px;
+			z-index: 9999;
+		}
+
+		.boxx:hover {
+			background: rgba(000, 000, 000, 0.5)
+		}
+
+		.product {
+			/* width: 100%; */
+			overflow: hidden;
+			background: #fff;
+			position: absolute;
+			left: 30%;
+			top: 80px;
+			z-index: 9999;
 		}
 	</style>
 </head>
@@ -319,15 +351,9 @@
 				<div class="swiper-container">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide" style="background:url(images/Beijing.png)"></div>
-						<div class="swiper-slide" style="background:url(images/Beijing.png)"></div>
-						<div class="swiper-slide" style="background:url(images/Beijing.png)"></div>
-						<div class="swiper-slide" style="background:url(images/Beijing.png)"></div>
-						<div class="swiper-slide" style="background:url(images/Beijing.png)"></div>
-						<div class="swiper-slide" style="background:url(images/Beijing.png)"></div>
-						<div class="swiper-slide" style="background:url(images/Beijing.png)"></div>
-						<div class="swiper-slide" style="background:url(images/Beijing.png)"></div>
-						<div class="swiper-slide" style="background:url(images/Beijing.png)"></div>
-						<div class="swiper-slide" style="background:url(images/Beijing.png)"></div>
+						<div class="swiper-slide" style="background:url(images/Beijing_two.png)"></div>
+						<div class="swiper-slide" style="background:url(images/Beijing_three.png)"></div>
+						<div class="swiper-slide" style="background:url(images/Beijing_four.png)"></div>
 					</div>
 					<!-- Add Pagination -->
 					<!--<div class="swiper-pagination"></div>-->
@@ -339,18 +365,117 @@
 
 				</div>
 				<!-- 头部 -->
-				<div class="header">
-					<span class="minlogo"><img src="images/minlogo.png" alt="">恺思睿思</span>
-					<ul class="nav">
-						<li>首页</li>
-						<li>产品</li>
-						<li>解决方案</li>
-						<li>加盟合作</li>
-						<li>售后支持</li>
-						<li>关于我们</li>
-						<li><button>登陆</button></li>
-						<li style="margin-left: 13px"><button>注册</button></li>
-					</ul>
+				<div class="boxx">
+					<div class="header">
+						<span class="minlogo"><img src="images/minlogo.png" alt="" style="width:62px">恺思睿思</span>
+						<ul class="nav">
+							<li class="ho" style="text-indent: 22px;color: #fff">产品
+									<div class="triangle_on"></div>
+								<div class="product">
+									<!--  906 495 -->
+									<div class="pr_header">
+										<div class="img">
+											<img src="images/arrows.png" alt=""
+												style="width:40px;height:40px;padding-top: 20px;">
+										</div>
+										<div style="padding-top: 12px">恺思睿思智能销售云平台 <img src="images/arrows.png" alt=""
+												style="width: 40px;height:40px;" class="dispimg"></div>
+									</div>
+									<div class="pr_content" style="overflow: hidden;border-bottom: 1px solid #898989">
+										<div class="pc_left">
+											<span><img src="images/logo.png" alt="" style="width:20px;height:20px">恺思线索
+												<span class="il"><img src="images/logo.png" alt=""></span></span>
+											<ul>
+												<li>企业查询</li>
+												<li>高级筛选</li>
+												<li style="margin-bottom: 33px;">智能推荐</li>
+											</ul>
+										</div>
+										<div class="pc_middle">
+											<span><img src="images/logo.png" alt=""
+													style="width:20px;height:20px">恺思触达<span class="il"><img
+														src="images/logo.png" alt=""></span></span>
+											<ul>
+												<li>语音机器人</li>
+												<li>智能呼叫系统</li>
+											</ul>
+										</div>
+										<div class="pc_right">
+											<span><img src="images/logo.png" alt=""
+													style="width:20px;height:20px">恺思CRM<span class="il"><img
+														src="images/logo.png" alt=""></span></span>
+											<ul>
+												<li>客户管理</li>
+												<li>销售自动化</li>
+												<li>销售管理</li>
+											</ul>
+										</div>
+									</div>
+									<div class="pc_footer">
+										<div class="pcf_left">
+											<img src="images/logo.png" alt=""><span>全量企业知识图鉴</span>
+										</div>
+										<div class="pcf_right">
+											<img src="images/logo.png" alt=""><span>恺思AI</span><span
+												style="background:blue;color:#fff;padding: 2px;font-size: 12px;margin-left: 20px;">即将上线</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li style="text-indent: 22px;color: #fff" class="ho_two">
+								解决方案
+								<div class="triangle_two"></div>
+								<div class="solution">
+									<div class="boxso">
+										<div class="boxso_left">
+											<span style="background: url(images/logoa.png)no-repeat -205px -303px;"></span>
+											<p style="color:#000;line-height:20px;margin-top: 15px">企业知识图谱</p>
+											<p style="color:#000;line-height:20px;margin-top: 10px">你想要的企业、数据、关系这里都有</p>
+											<p style="color:#000;line-height:20px;margin-top: 10px;margin-bottom: 10px;">
+												<button>了解详情</button>
+											</p>
+										</div>
+										<div class="boxso_left">
+											<span style="background: url(images/logoa.png)no-repeat -280px -303px;margin-left: 111px;"></span>
+												<p style="color:#000;line-height:20px;margin-top: 15px">销售预测模型</p>
+												<p style="color:#000;line-height:20px;margin-top: 10px">用大数据和AI，精准预测客户
+												</p>
+												<p style="color:#000;line-height:20px;margin-top: 10px;margin-bottom: 10px;">
+													<button>了解详情</button>
+												</p>
+										</div>
+										<div class="boxso_left">
+											<span style="background: url(images/logoa.png)no-repeat -351px -303px;margin-left: 89px;"></span>
+											<p style="color:#000;line-height:20px;margin-top: 15px">市场分析模型</p>
+											<p style="color:#000;line-height:20px;margin-top: 10px">恺思帮您洞悉市场一切</p>
+											<p style="color:#000;line-height:20px;margin-top: 10px;margin-bottom: 65px;">
+												<button>了解详情</button>
+											</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li style="text-indent: 22px;color: #fff" class="ho_sex">
+								关于我们
+								<div class="triangle_sex"></div>
+								<div class="AboutUs">
+									
+									<div class="BoxAU">
+										
+										<ul>
+											<li>企业介绍</li>
+											<li>投资者</li>
+											<li>加入我们</li>
+											<li>联系我们</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li style="text-indent: 22px;color: #fff;"><button>登陆</button></li>
+							<li style="text-indent: 22px;color: #fff;"><button>注册</button></li>
+						</ul>
+					</div>
+
 				</div>
 				<div class="middle">
 					<span>智能营销平台</span>
@@ -451,12 +576,18 @@
 					</div>
 					<div class="exhibition_content">
 						<ul>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li style="margin-top: 20px"></li>
-							<li style="margin-top: 20px"></li>
-							<li style="margin-top: 20px"></li>
+							<li style="background:url(images/minlogo_on.png);background-size: 100% 100%"></li>
+							<li style="background:url(images/minlogo_two.png);background-size: 100% 100%"></li>
+							<li style="background:url(images/minlogo_sex.png);background-size: 100% 100%"></li>
+							<li
+								style="margin-top: 20px;background:url(images/minlogo_fow.png);background-size: 100% 100%">
+							</li>
+							<li
+								style="margin-top: 20px;background:url(images/minlogo_fieo.png);background-size: 100% 100%">
+							</li>
+							<li
+								style="margin-top: 20px;background:url(images/minlogo_sexw.png);background-size: 100% 100%">
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -582,7 +713,7 @@
 			</div>
 		</div>
 		<!-- 锚点 -->
-		 <!-- <div class="anchor"> 
+		<!-- <div class="anchor"> 
 			<ul>
 				<li><a href="#roof">顶部</a></li>
 				<li><a href="#product display">展示</a></li>
