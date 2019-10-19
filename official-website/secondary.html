@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/jqyery.secondary.css">
+    <script type="text/javascript" src="javascript/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="javascript/scriptSeondary.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/jquery.fullPage.css">
+    <script type="text/javascript" src="javascript/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="javascript/jquery.fullPage.min.js"></script>
+    <script type="text/javascript" src="javascript/jquery.easing.main.js"></script>
+    <script type="text/javascript" src="javascript/swiper.min.js"></script>
+
+    <style>
+        body,
+        div,
+        ul,
+        ol,
+        dt,
+        dd,
+        dl,
+        li,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        form,
+        input,
+        select,
+        textarea,
+        p,
+        img,
+        a,
+        span,
+        strong,
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        button {
+            outline: none;
+            cursor: pointer;
+        }
+
+        body {
+            font-size: 12px;
+            font-family: "微软雅黑";
+            color: #000000;
+            background-color: #FFFFFF;
+            overflow-x: hidden;
+
+        }
+
+        html,
+        body {
+            scroll-behavior: smooth
+        }
+
+        ul,
+        ol,
+        li {
+            list-style: none;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: 12px;
+            font-weight: normal;
+        }
+
+        img,
+        input,
+        select,
+        textarea {
+            vertical-align: middle
+        }
+
+        img {
+            border: none;
+        }
+
+        a {
+            color: #333333;
+            text-decoration: none;
+        }
+
+        .clear {
+            clear: both;
+            height: 0;
+            width: 0;
+            overflow: hidden;
+        }
+
+        .tableCell {
+            display: block;
+        }
+
+        #box {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .section:nth-child(1) {
+            position: relative;
+            width: 100%;
+            height: 100% !important;
+            background: url(images/minlogo_two.png);
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            overflow: hidden;
+        }
+
+        .section:nth-child(2) {
+            background: #fff;
+            width: 100%;
+            background: #ff3366;
+            overflow: hidden;
+        }
+
+        .section:nth-child(3) {
+            background: #fff;
+
+            width: 100%;
+
+            overflow: hidden;
+        }
+
+        .section:nth-child(4) {
+            background: #fff;
+            width: 100%;
+
+            overflow: hidden;
+        }
+
+        .section:nth-child(5) {
+            background: #fff;
+            width: 100%;
+
+            overflow: hidden;
+        }
+
+        .section:nth-child(6) {
+            background: #fff;
+            width: 100%;
+
+            overflow: hidden;
+        }
+
+        .section:nth-child(7) {
+            background: #fff;
+            width: 100%;
+
+            overflow: hidden;
+        }
+
+        .header {
+            width: 1200px;
+
+            height: 86px;
+            margin: 0 auto;
+
+            overflow: hidden;
+
+        }
+
+
+
+        .minlogo {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 10;
+            float: left;
+            line-height: 100px;
+        }
+
+        .middle {
+            width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            left: 0;
+            top: 100px;
+            z-index: 999;
+        }
+
+        .cuspend {
+            position: fixed;
+            right: 0;
+            bottom: 64px;
+            width: 193px;
+            background: #fff;
+            border-radius: 20% 20% 0 0;
+            z-index: 999;
+        }
+
+        #fullPage-nav.right {
+            margin-top: -108px !important;
+        }
+
+        .content {
+            width: 1200px;
+            margin: 0 auto;
+
+            /* margin-bottom: 20px; */
+        }
+
+        .exhibition {
+            width: 1200px;
+            margin: 0 auto;
+            margin-top: 12px;
+            text-align: center;
+        }
+
+        .help {
+            width: 1200px;
+            height: 100%;
+            margin: 0 auto;
+            margin-top: 12px;
+            overflow: hidden;
+            margin-bottom: 166px;
+        }
+
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #fff;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .boxs {
+            width: 1200px;
+            margin: 10px auto;
+            margin-bottom: 180px;
+        }
+
+        .footer {
+            width: 100%;
+            overflow: hidden;
+            background: #666666;
+            color: #fff;
+            margin-top: 80px;
+        }
+
+        .shade {
+            width: 100%;
+            height: 100%;
+            background: rgba(000, 000, 000, 0.3);
+            overflow: hidden;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        .anchor {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 1111111;
+            color: #fff !important;
+        }
+
+        #roof {
+            height: 753px;
+
+        }
+
+        #example {
+            margin-bottom: 40px;
+        }
+
+        #productDisplay {
+            margin-bottom: 40px
+        }
+
+        #dowebok {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .boxx {
+            width: 100%;
+            height: 80px;
+            position: relative;
+
+
+            z-index: 9999;
+        }
+
+        /* .boxx:hover {
+            background: rgba(000, 000, 000, 0.5)
+        } */
+
+        .product {
+            /* width: 100%; */
+            overflow: hidden;
+            background: #fff;
+            position: absolute;
+            left: 38%;
+            top: 80px;
+            z-index: 9999;
+        }
+
+        .content {
+            width: 100%;
+
+            overflow: hidden;
+        }
+
+        .box_co {
+
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        .content_header {
+            width: 100%;
+            overflow: hidden;
+
+            background: url(images/minlogo_fow.png);
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+
+        .content_co {
+            width: 100%;
+            background: url(images/BeiJing_three.png);
+            background-size: 100% 100%;
+            overflow: hidden;
+
+        }
+
+        .dd {
+            width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .box_cn {
+            width: 1200px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        .content_header li {
+            width: 32%;
+            height: 300px;
+            background: rgba(255, 255, 255, 0.1);
+            /* margin-left: 10px;
+            margin-top: 10px;
+            ; */
+            float: left;
+            color: #fff;
+
+
+        }
+
+        .cc {
+            width: 1200px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        .contentc_left {
+            width: 49.5%;
+            height: 600px;
+            float: left;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .contentc_right {
+            width: 47.2%;
+            height: 600px;
+            float: left;
+            background: rgba(255, 255, 255, 0.1);
+            margin-left: 1%;
+        }
+        .cc_header h1{
+            text-align: center;
+            font-size: 30px;
+            color: #fff;
+            margin-top: 20px;
+            margin-bottom: 20px;;
+        }
+        .rr{
+            width: 97.5%;
+            height: 300px;
+            background: rgba(000, 000, 000, 0.3);
+            float: left;
+        }
+        .box_cn{
+            width: 100%;
+            height: 800px;
+            background: url(images/love_three.png)no-repeat;
+            background-size: 100% 100%;
+        }
+        .content_headero{
+            width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .contenth_header{
+            text-align: center;
+            line-height: 90px;
+            font-size: 25px !important;
+        }
+        .contenth_con{
+            width: 100%;
+            overflow: hidden;
+            margin-top: 50px;;
+        }
+        .contenth_con li{
+            width: 23%;
+            height: 400px;
+            margin-left: 20px;
+            background: rgba(000, 000, 000, 0.3);
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <header>
+            <div id="roof">
+                <div class="section">
+                    <!-- 头部 -->
+                    <div class="boxx">
+                        <div class="header">
+                            <span class="minlogo"><img src="images/minlogo.png" alt="" style="width:55px">恺思睿思</span>
+                            <ul class="nav">
+                                <li class="ho" style="text-indent: 22px;color: #fff">产品
+                                    <div class="triangle_on"></div>
+                                    <div class="product">
+                                        <!--  906 495 -->
+                                        <div class="pr_header">
+                                            <div class="img">
+                                                <img src="images/arrows.png" alt=""
+                                                    style="width:40px;height:40px;padding-top: 20px;">
+                                            </div>
+                                            <div style="padding-top: 12px">恺思睿思智能销售云平台 <img src="images/arrows.png"
+                                                    alt="" style="width: 40px;height:40px;" class="dispimg"></div>
+                                        </div>
+                                        <div class="pr_content"
+                                            style="overflow: hidden;border-bottom: 1px solid #898989">
+                                            <div class="pc_left">
+                                                <span><img src="images/logo.png" alt=""
+                                                        style="width:20px;height:20px">恺思线索
+                                                    <span class="il"><img src="images/logo.png" alt=""></span></span>
+                                                <ul>
+                                                    <li>企业查询</li>
+                                                    <li>高级筛选</li>
+                                                    <li style="margin-bottom: 33px;">智能推荐</li>
+                                                </ul>
+                                            </div>
+                                            <div class="pc_middle">
+                                                <span><img src="images/logo.png" alt=""
+                                                        style="width:20px;height:20px">恺思触达<span class="il"><img
+                                                            src="images/logo.png" alt=""></span></span>
+                                                <ul>
+                                                    <li>语音机器人</li>
+                                                    <li>智能呼叫系统</li>
+                                                </ul>
+                                            </div>
+                                            <div class="pc_right">
+                                                <span><img src="images/logo.png" alt=""
+                                                        style="width:20px;height:20px">恺思CRM<span class="il"><img
+                                                            src="images/logo.png" alt=""></span></span>
+                                                <ul>
+                                                    <li>客户管理</li>
+                                                    <li>销售自动化</li>
+                                                    <li>销售管理</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="pc_footer">
+                                            <div class="pcf_left">
+                                                <img src="images/logo.png" alt=""><span>全量企业知识图鉴</span>
+                                            </div>
+                                            <div class="pcf_right">
+                                                <img src="images/logo.png" alt=""><span>恺思AI</span><span
+                                                    style="background:blue;color:#fff;padding: 2px;font-size: 12px;margin-left: 20px;">即将上线</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li style="text-indent: 22px;color: #fff" class="ho_two">
+                                    解决方案
+                                    <div class="triangle_two"></div>
+                                    <div class="solution">
+                                        <div class="boxso">
+                                            <div class="boxso_left">
+                                                <span
+                                                    style="background: url(images/logoa.png)no-repeat -205px -303px;"></span>
+                                                <p style="color:#000;line-height:20px;margin-top: 15px">企业知识图谱</p>
+                                                <p style="color:#000;line-height:20px;margin-top: 10px">你想要的企业、数据、关系这里都有
+                                                </p>
+                                                <p
+                                                    style="color:#000;line-height:20px;margin-top: 10px;margin-bottom: 10px;">
+                                                    <button>了解详情</button>
+                                                </p>
+                                            </div>
+                                            <div class="boxso_left">
+                                                <span
+                                                    style="background: url(images/logoa.png)no-repeat -280px -303px;margin-left: 91px;"></span>
+                                                <p style="color:#000;line-height:20px;margin-top: 15px">销售预测模型</p>
+                                                <p style="color:#000;line-height:20px;margin-top: 10px">用大数据和AI，精准预测客户
+                                                </p>
+                                                <p
+                                                    style="color:#000;line-height:20px;margin-top: 10px;margin-bottom: 10px;">
+                                                    <button>了解详情</button>
+                                                </p>
+                                            </div>
+                                            <div class="boxso_left">
+                                                <span
+                                                    style="background: url(images/logoa.png)no-repeat -351px -303px;margin-left: 70px;"></span>
+                                                <p style="color:#000;line-height:20px;margin-top: 15px">市场分析模型</p>
+                                                <p style="color:#000;line-height:20px;margin-top: 10px">恺思帮您洞悉市场一切</p>
+                                                <p
+                                                    style="color:#000;line-height:20px;margin-top: 10px;margin-bottom: 65px;">
+                                                    <button>了解详情</button>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li style="text-indent: 22px;color: #fff" class="ho_sex">
+                                    关于我们
+                                    <div class="triangle_sex"></div>
+                                    <div class="AboutUs">
+
+                                        <div class="BoxAU">
+
+                                            <ul>
+                                                <li>企业介绍</li>
+                                                <li>投资者</li>
+                                                <li>加入我们</li>
+                                                <li>联系我们</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li style="text-indent: 22px;color: #fff;"><button>登录</button></li>
+                                <li style="text-indent: 22px;color: #fff;"><button
+                                        style="background:#fff;color:#000">注册</button></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="middle">
+                        <span>智能营销平台</span>
+                        <p>专注中小型成长企业营销管理解决方案</p>
+                        <p><button>立即体验</button></p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="box_co">
+                <div class="content_header">
+                    <div class="dd">
+                        <ul>
+                            <li>
+                                <h1>恺思睿思</h1>
+                            </li>
+                            <li style="margin-left:10px">
+                                <h1>恺思睿思</h1>
+                            </li>
+                            <li style="margin-left:10px">
+                                <h1>恺思睿思</h1>
+                            </li>
+                            <li style="margin-top:10px">
+                                <h1>恺思睿思</h1>
+                            </li>
+                            <li style="margin-left:10px;margin-top:10px">
+                                <h1>恺思睿思</h1>
+                            </li>
+                            <li style="margin-left:10px;margin-top:10px">
+                                <h1>恺思睿思</h1>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content_co">
+                    
+                    <div class="cc">
+                        <div class="cc_header"><h1>恺思睿思</h1></div>
+                        <div>
+                        <div class="contentc_left">
+
+                        </div>
+                        <div class="contentc_right">
+
+                        </div> 
+                    </div>
+                        <div class="rr"></div>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="box_cn">
+                <div class="content_headero">
+                    <div class="contenth_header">
+                        <h1 style="color:#fff;font-size: 25px">恺思睿思</h1>
+                    </div>
+                    <div class="contenth_con">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

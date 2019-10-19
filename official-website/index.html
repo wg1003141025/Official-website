@@ -41,6 +41,10 @@
 			margin: 0;
 		}
 
+		button {
+			outline: none
+		}
+
 		body {
 			font-size: 12px;
 			font-family: "微软雅黑";
@@ -360,7 +364,7 @@
 					<!-- 下面导航点 -->
 					<!-- Add Arrows -->
 					<div class="swiper-button-next"></div>
-				<div class="swiper-button-prev"></div>
+					<div class="swiper-button-prev"></div>
 					<!--两个左右切换按钮-->
 
 				</div>
@@ -386,9 +390,9 @@
 											<span><img src="images/logo.png" alt="" style="width:20px;height:20px">恺思线索
 												<span class="il"><img src="images/logo.png" alt=""></span></span>
 											<ul>
-												<li>企业查询</li>
-												<li>高级筛选</li>
-												<li style="margin-bottom: 33px;">智能推荐</li>
+											<a href="secondary.html"><li>企业查询</li></a>	
+											<a href="secondary.html"><li>高级筛选</li></a>
+											<a href="secondary.html"><li style="margin-bottom: 33px;">智能推荐</li></a>	
 											</ul>
 										</div>
 										<div class="pc_middle">
@@ -439,7 +443,7 @@
 										</div>
 										<div class="boxso_left">
 											<span
-												style="background: url(images/logoa.png)no-repeat -280px -303px;margin-left: 111px;"></span>
+												style="background: url(images/logoa.png)no-repeat -280px -303px;margin-left: 91px;"></span>
 											<p style="color:#000;line-height:20px;margin-top: 15px">销售预测模型</p>
 											<p style="color:#000;line-height:20px;margin-top: 10px">用大数据和AI，精准预测客户
 											</p>
@@ -450,7 +454,7 @@
 										</div>
 										<div class="boxso_left">
 											<span
-												style="background: url(images/logoa.png)no-repeat -351px -303px;margin-left: 89px;"></span>
+												style="background: url(images/logoa.png)no-repeat -351px -303px;margin-left: 70px;"></span>
 											<p style="color:#000;line-height:20px;margin-top: 15px">市场分析模型</p>
 											<p style="color:#000;line-height:20px;margin-top: 10px">恺思帮您洞悉市场一切</p>
 											<p
@@ -478,7 +482,8 @@
 								</div>
 							</li>
 							<li style="text-indent: 22px;color: #fff;"><button>登录</button></li>
-							<li style="text-indent: 22px;color: #fff;"><button>注册</button></li>
+							<li style="text-indent: 22px;color: #fff;"><button
+									style="background:#fff;color:#000">注册</button></li>
 						</ul>
 					</div>
 
@@ -708,7 +713,7 @@
 		<!--悬浮框 -->
 		<div class="cuspend">
 			<div class="cuspend_header">
-				在线咨询 <span id='dn'>X</span>
+				在线咨询 <span id='dn' style="cursor: pointer;">X</span>
 			</div>
 			<div class="cuspend_content">
 				<ul>
