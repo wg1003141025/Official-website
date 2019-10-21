@@ -446,6 +446,7 @@ html, body {
 .box_f{
     width: 1200px;
     margin: 50px auto;
+    overflow: hidden;
 }
 .box_f div{
     float: left;
@@ -616,7 +617,7 @@ color: #000;
     top: 82px;
 }
 .boxso{
-    width: 1200px;
+    width: 1100px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -626,7 +627,7 @@ color: #000;
     text-align: center;
 }
 .boxso_left span{
-   margin-left: 137px;
+   margin-left: 106px;
    margin-top: 65px;
    
    width: 75px;height: 77px;
