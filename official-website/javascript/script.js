@@ -1,53 +1,25 @@
 $(function () {
-	
 	$(".cuspend_content").eq(0).hide()
 	$("#dn").hide()
 	$(".cuspend_header").eq(0).click(function () {
 		$(".cuspend_content").eq(0).show()
 		$("#dn").show()
 	})
-	
-	$("#dn").click(function(){
+
+	$("#dn").click(function () {
 		$(".cuspend").eq(0).hide()
 	})
-	// $(".product").eq(0).hide()
-	// $(".ho").eq(0).hover(function(){
-	// 	$(".product").eq(0).show()
-	// 	},function(){
-	// 		$(".product").eq(0).hide()
-	// 	})	
-	// $(".ho").mouseover(function () {
-	// 	$(".product").eq(0).show()
-	// });
-	// $(".product").mouseout(function () {
-	// 	$(".product").eq(0).hide();
-	// });
-	// $('#dowebok').fullpage({
-	// 	scrollingSpeed : 700,						  // 滚动速度，单位为毫秒,默认为700
-	// 	navigation :true,							  // 是否显示项目导航
-	// 	keyboardScrolling : true,					  // 是否使用键盘导航上下左右
-	// 	loopBottom : true,   						  // 滚动到最底部后是否滚回顶部
-	// 	afterRender : function () {					  // 页面结构生成后的回调函数，或者说页面初始化完成后的回调函数
-	// 		// $('#box').removeClass().addClass('bounceInLeft animated');
-	// 	},
-	// 	afterLoad : function (anchorLink,index) {
+	$(".ho").hover(function () {
+		$(".cp").eq(0).animate({
+			height: "200px"
+		}, 100)
+	}, function () {
+		$(".cp").eq(0).animate({
+			height: "0px"
+		}, 200)
 
-	// 		// 滚动到某一屏后的回调函数，接收 anchorLink 和 index 两个参数
-	// 		// anchorLink 是锚链接的名称( 必须 )
-	// 		// index 是序号，从1开始计算
-
-	// 	},
-	// 	onLeave : function (index) {
-
-	// 		// 滚动前的回调函数，接收 index、nextIndex 和 direction 3个参数
-	// 		// index 是离开的“页面”的序号，从1开始计算
-	// 		// nextIndex 是滚动到的“页面”的序号，从1开始计算
-	// 		// direction 判断往上滚动还是往下滚动，值是 up 或 down
-
-	// 	}
-	// });
-
-	var swiper = new Swiper('.swiper-container', {
+	})
+	var swiper = new Swiper('#roof .swiper-container', {
 		spaceBetween: 30,
 		centeredSlides: true,
 		autoplay: {
@@ -55,14 +27,28 @@ $(function () {
 			disableOnInteraction: false,
 		},
 		pagination: {
-			el: '.swiper-pagination',
+			el: '#roof .swiper-pagination',
 			clickable: true,
 		},
 		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
+			nextEl: '#roof .swiper-button-next',
+			prevEl: '#roof .swiper-button-prev',
 		},
 		loop: 1
 	});
-
+	var swiper = new Swiper('.se_oh .swiper-container', {
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		   },
+        pagination: '.se_oh .swiper-pagination',
+        paginationClickable: true,
+        // Disable preloading of all images
+        preloadImages: false,
+        // Enable lazy loading
+		lazyLoading: true,
+		slidesPerView:"auto",
+		slidesPerView: 3.08,
+    });
+	
 })

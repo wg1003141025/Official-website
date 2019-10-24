@@ -154,10 +154,9 @@ html, body {
     left: 20px;
 }
 .nav{
-   float: right;
-    margin-left: 116px;
+   float: left;
+    margin-left: 113px;
     line-height: 100px;
-    
     
 }
 .nav button{
@@ -168,6 +167,9 @@ html, body {
     border-radius: 6px;
     color: #fff;
 }
+.nav li{
+    line-height: 80px;
+}
 .header li{
     float: left;
    
@@ -175,37 +177,39 @@ html, body {
     
 }
 .middle span{
-    font-size: 90px;
+    font-size: 70px;
     color: #fff;
-    font-weight: 5;
+    font-weight: bold;
     text-shadow: black -5px -5px 6px;
-    letter-spacing:68px;
-
+    letter-spacing:75px;
+    text-indent: 41px;
 }
 .middle p:nth-child(2){
-    font-size: 21px;
+    font-size: 18px;
     color: #fff;
-    letter-spacing:31px;
-    text-indent:-35px;
+    letter-spacing:30px;
+    text-indent:-49px;
+    /* margin-top: -6px; */
 }
 .middle button{
-    padding: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+   
     border: 2px solid #fff;
     background: none;
-    border-radius: 8%;
+    border-radius: 12px;
     color: #fff;
-    font-size: 18px;
-    margin-top: 216px;
+    font-size: 23px;
+    margin-top: 232px;
+    letter-spacing: 5px;
+    width: 200px;
+    line-height: 58px;
 }
 .cuspend_header{
     width: 100%;
     background: #305FC9;
     text-align: center;
-    line-height: 63px;
+    line-height: 47px;
     color: #fff;
-    font-size: 20px;
+    font-size: 16px;
     border-radius:8px;
 }
 .cuspend_content {
@@ -217,36 +221,23 @@ html, body {
     width: 100%;
 }
 .cuspend_content li{
-    width: 142px;
-    border: 2px solid blue;
+    width: 144px;
+    border: 0.5px solid #dcdcdc;
     margin: 6px auto;
-    border-radius: 20%;
-    line-height: 46px;
-    font-size: 16px;
+    border-radius: 31px;
+    line-height: 33px;
+    font-size: 14px;
     color: #808080;
     text-indent: 10px;
 }
 .cuspend_content span{
-    margin-left: 16px;
+    margin-left: 12px;
 }
 .content_header{
     font-size: 16px;
     color: #808080;
     letter-spacing:8px;
     text-align: center;
-}
-.content_header p{
-    margin-top: 20px;
-}
-.content_show{
-    margin-top: 30px;
-    text-align: center;
-    color: #666666;
-    position: relative;
-}
-.content_show span{
-    font-size: 28px;
-    letter-spacing:20px;
 }
 .wire_left{
     width: 480px;
@@ -268,163 +259,11 @@ html, body {
     overflow: hidden;
     margin-top: 28px;
     margin-left: 28px;
-}
-.production{
-    width: 30%;
-   
-    overflow: hidden;
-    margin-left: 18px;
-    float: left;
-}
-.production:nth-child(1){
-    background:url(../images/love_on.png) -669px -232px;
-   
-}
-.production:nth-child(2){
-    background:url(../images/love_two.png) -576px -232px;
-   
-}
-.production:nth-child(3){
-    background:url(../images/love_three.png) -998px -232px;
-   
-}
-.lo{
-    margin-top: 110px;
-}
-.explain{
-    color: #fff;
-    font-size: 20px;
-    margin-top: 8px;
-}
-.hm{
-    padding-left: 14px;
-    padding-right: 14px;
-    color: #fff;
-    font-size: 14px;
-    margin-top: 20px;
-    text-indent: 50px;
-}
-.consult{
-    border: 2px solid #fff;
-    background: none;
-    width: 168px;
-    height: 52px;
-    margin-top: 20px;
-    text-align: center;
-    font-size: 21px;
-    color: #fff;
-    border-radius: 5px;
-}
-.exhibition_header{
-    text-align: center;
-    font-size: 33px;
-    color: #666363;
-}
-.exhibition_content{
-    width: 100%;
-    margin-top: 24px;
-    margin-bottom: 61px;
-    overflow: hidden;
-    margin-left: 28px;
-}
-.exhibition_content li{
-    width: 30.6%;
-    height: 297px;
-    float: left;
-    margin-right: 18px;
-    /* background:url(../images/map_on.png)no-repeat -221px -147px; */
+    display: flex;
     
-}
-.help_header{
-    color: #666666;
-    font-size: 33px;
-    text-align: center;
-}
-.help_content{
-    margin-top: 20px;
-    width: 100%;
-    height: 100%;
-    margin-left: 28px;
-    overflow: hidden;
-}
-.helpc_left{
-    width: 600px;
-    height: 600px;
-    float: left;
-}
-.helpc_left img{
-    width: 100%;
-    height: 100%;
-}
-.helpc_right{
-    float: left;
-    width: 600px;
-    height: 500px;
-}
-.helpc_right p:nth-child(1){
-    color: #979797;
-    font-size: 32px;
-    font-weight: bold;
-    margin-left:47px;
-}
-.helpc_right p:nth-child(2){
-    color: #979797;
-    font-size: 20px;
-    font-weight: bold;
-    margin-left:47px;
-    margin-top: 181px;
-    width: 450px;
-    letter-spacing:5px;
-    text-align: center;
-}
-.headline{
-    text-align: center;
-    font-size: 33px;
-    color: #666;
-}
-.se_content{
-    width: 100%;
-    overflow: hidden;
-    margin-top: 43px;
-}
-.sect_left{
-    font-size: 34px;
-    margin-top: 348px;
-    float: left;
-}
-.sect_right{
-    width: 800px;
-  
-    float: left;
-    margin-left: 90px;
-}
-.sect_right img{
-    width: 100%;
-    height: 100%;
-}
-.sec_header{
-    text-align: center;
-    width:100%;
-    color: #666666;
-    font-size: 33px;
-    font-weight: 9;
-}
-.sec_left{
-    width: 400px;
-    height: 400px;
-    margin-left: 280px;
-    margin-top: 140px;
-    float: left;
-}
-.sec_left img{
-    width: 100%;
-    height: 100%;
-}
-.sec_right{
-    width: 520px;
-    float: left;
-    margin-top: 140px;
-}
+ }
+
+
 .right_img{
    width: 100px;
     height: 100px;
@@ -448,31 +287,26 @@ html, body {
     margin: 50px auto;
     overflow: hidden;
 }
-.box_f div{
+.foh_left div{
     float: left;
-    margin-right: 150px;
+    margin-right: 65px;
    
 }
 .box_f ul{
-    margin-top: 40px;
+    margin-top: 16px;
 }
 .box_f li{
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 12px;
 }
 .box_f p{
     font-size: 18px;
 }
 .box_f div:nth-child(2){
-    font-size: 18px;
+    font-size: 15px;
 }
 .box_f div:nth-child(5){
     font-size: 18px;
-}
-.box_f li:hover{
-    text-decoration:underline;
-    color: #898989;
-    cursor: pointer;
 }
 .lo img{
     width: 100%;
@@ -483,127 +317,8 @@ html, body {
     width:60px;
     height: 50px;
    margin-left: 42%;
-}
-.pr_header{
-    line-height: 112px;
-    background: blue;
-}
-.pr_header div{
-    float: left;
-}
-.img{
-    margin-left: 80px;
-   
-    padding-bottom: 21px;
-}
-.pr_header{
-    width: 100%;
-    line-height: 55px;
-    background:#0099cc;
-    overflow: hidden;
-    color: #fff;
-    font-size: 20px;
-}
-.pr_header div:nth-child(1){
-    margin-right: 20px;
-}
-.dispimg{
-    display: none;
-}
-.pr_header div:nth-child(2):hover .dispimg{
-    display: inline-block;
-}
-.pr_content li{
-    line-height: 20px ;
-}
-.pc_left{
-    float: left;
-    margin-left: 31px;
-    font-size: 14px;
-    margin-top: 15px;
-    width: 28%;
-}
-.pc_left li{
-    font-size: 17px;
-    color: #898989;
-    line-height: 38px;
-    text-indent: 40px;
-}
-.pc_middle{
-    float: left;
-    margin-left: 47px;
-    font-size: 14px;
-    margin-top: 15px;
-    width: 25%;
-}
-.pc_middle li{
-    font-size: 17px;
-    color: #898989;
-    line-height: 38px;
-    
-}
-.pc_right{
-    float: left;
-    margin-left: 36px;
-    font-size: 14px;
-    margin-top: 15px;
-    width: 28%;
-}
-.pc_right li{
-    font-size: 17px;
-    color: #898989;
-    line-height: 38px;
-   
-}
-.pc_left span{
-    font-size: 20px;
-    font-weight: 10;
-}
-.pc_middle span{
-    font-size: 20px;
-    font-weight: 10;
-}
-.pc_right span{
-    font-size: 20px;
-    font-weight: 10;
-}
-.il img{
-    height: 20px;  
-    margin-left: 5px;
-    display: none
-}
-.pc_right span:nth-child(1):hover .il img{
-    display: inline-block;
-}
-.pc_left span:nth-child(1):hover .il img{
-    display: inline-block;
-}
-.pc_middle span:nth-child(1):hover .il img{
-    display: inline-block;
-}
-.pr_content li:hover{
-    color:#0099cc
-}
-.pc_footer{
-    line-height: 50px;
-}
-.pcf_left{
-    float: left;
-    width: 49%;
-    text-align: center;
-    border-right: 1px solid #898989;
-    margin-bottom: 20px;
-}
-.pcf_right{
-    float: left;
-    width: 50%;
-    text-align: center;
-}
-.product{
-width:600px;
-display: none;
-color: #000;
-}
+} 
+
 .ho:hover .product{
     display: block;
 }
@@ -614,7 +329,7 @@ color: #000;
     overflow: hidden;
     position: absolute;
     left: 0;
-    top: 82px;
+    top: 71px;
 }
 .boxso{
     width: 1100px;
@@ -627,7 +342,7 @@ color: #000;
     text-align: center;
 }
 .boxso_left span{
-   margin-left: 106px;
+   margin-left: 137px;
    margin-top: 65px;
    
    width: 75px;height: 77px;
@@ -655,7 +370,7 @@ color: #000;
 }
 .BoxAU{
     float: right;
-    margin-right: 308px;;
+    margin-right: 450px;;
 }
 .ho_sex:hover .AboutUs{
     display: block;
@@ -668,7 +383,7 @@ color: #000;
     border-bottom: 8px solid #fff;
     border-left: 8px solid transparent;
     position: absolute;
-    right: 390px;
+    right: 511px;
     top: 64px;
     display: none
 }
@@ -683,8 +398,8 @@ color: #000;
     border-bottom: 8px solid #fff;
     border-left: 8px solid transparent;
     position: absolute;
-    right: 475px;
-    top: 66px;
+    right: 869px;
+    top: 55px;
     display: none
 }
 .ho_two:hover .triangle_two{
@@ -707,11 +422,95 @@ color: #000;
 }
 #dn{
     position: relative;
-    left: 26px;
-    top: -14px
+    left: 6px;
+    top: -1px
 }
 .cuspend_content li img{
-    width: 21px;
-    height: 21px;
+    width: 17px;
+  margin-left: 15px;
+  margin-bottom: 2px;
 }
-
+.help_left{
+    float: left;
+    width: 50%;
+    overflow: hidden;
+}
+.help_left img{
+    margin-left: 174px;
+    margin-top: 7px;
+    margin-bottom: 40px;
+}
+.help_right{
+    float: left;
+    width: 50%;
+    position: relative;
+}
+.help_right strong:nth-child(1){
+    font-size: 32px;
+    font-family:"微软雅黑"
+}
+#bc{
+    width: 66px;
+    height: 4px;
+    background: #305FC9;
+    position: absolute;
+    left: 0;
+    top: 49px;
+}
+.help_right span:nth-child(1){
+    display: block;
+    margin-top: 21px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.help_right p:nth-child(3){
+    margin-top: 10px;
+    font-size: 16px;;
+}
+.help_right button{
+    background: none;
+    border: 2px solid #305FC9;
+    line-height: 30px;
+    width: 113px;
+    height: 30px;
+    border-radius: 14px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #305FC9;
+}
+#ksxt{
+    position: relative;
+    left: 208px;
+    top: 32px;
+}
+.cp{
+    position: absolute;
+    left: 916px;
+    top: 81px;
+    overflow: hidden;
+    background: #fff;
+    height: 0px;
+    
+}
+.cp p:hover{
+    background:#305FC9;
+    cursor: pointer;
+}
+.cp p{
+    line-height: 51px !important;
+    color:#898989;
+    font-weight: bold;
+    display: block;
+    width: 100%;;
+}
+.cp p:nth-child(3){
+    text-indent: 8px;
+    cursor: pointer;
+}
+.section_header{
+    color: #4e505d;
+    font-size: 27px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 110px;
+}

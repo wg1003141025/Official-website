@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="en">
 <!-- 666 -->
+
 <head>
 	<meta charset="UTF-8">
-	<title>official-website</title>
+	<title>恺思睿思-专注智能营销系统</title>
 	<link rel="stylesheet" type="text/css" href="style/jquery.fullPage.css">
 	<link rel="stylesheet" type="text/css" href="style/animate.min.css">
 	<script type="text/javascript" src="javascript/jquery-1.8.3.min.js"></script>
@@ -12,6 +13,7 @@
 	<script type="text/javascript" src="javascript/script.js"></script>
 	<script type="text/javascript" src="javascript/swiper.min.js"></script>
 	<link rel="stylesheet" href="javascript/swiper.min.css">
+	<link rel="icon" href="images/logo.ico" type="image/x-icon" />
 	<style type="text/css">
 		body,
 		div,
@@ -39,6 +41,7 @@
 		* {
 			padding: 0;
 			margin: 0;
+			/*  */
 		}
 
 		button {
@@ -121,12 +124,12 @@
 		.section:nth-child(2) {
 			background: #fff;
 			width: 100%;
-			background: #ff3366;
+			/* background: #ff3366; */
 			overflow: hidden;
 		}
 
 		.section:nth-child(3) {
-			background: #fff;
+			background: #f5f5f5;
 
 			width: 100%;
 
@@ -134,7 +137,7 @@
 		}
 
 		.section:nth-child(4) {
-			background: #fff;
+			background: #f5f5f5;
 			width: 100%;
 
 			overflow: hidden;
@@ -179,6 +182,7 @@
 			font-weight: 10;
 			float: left;
 			line-height: 100px;
+
 		}
 
 		.middle {
@@ -187,7 +191,7 @@
 			text-align: center;
 			position: relative;
 			left: 0;
-			top: -680px;
+			top: -498px;
 			z-index: 999;
 		}
 
@@ -195,7 +199,7 @@
 			position: fixed;
 			right: 0;
 			bottom: 64px;
-			width: 193px;
+			width: 152px;
 			background: #fff;
 			border-radius: 20% 20% 0 0;
 			z-index: 999;
@@ -208,8 +212,9 @@
 		.content {
 			width: 1200px;
 			margin: 0 auto;
-			margin-top: 12px;
-			margin-bottom: 20px;
+			overflow: hidden;
+
+
 		}
 
 		.exhibition {
@@ -225,7 +230,7 @@
 			margin: 0 auto;
 			margin-top: 12px;
 			overflow: hidden;
-			margin-bottom: 166px;
+			padding: 73px;
 		}
 
 		html,
@@ -270,16 +275,17 @@
 
 		.boxs {
 			width: 1200px;
-			margin: 10px auto;
-			margin-bottom: 180px;
+			margin: 0 auto;
+
+			overflow: hidden;
 		}
 
 		.footer {
 			width: 100%;
 			overflow: hidden;
-			background: #666666;
+			background: #393a3c;
 			color: #fff;
-			margin-top: 80px;
+			margin-top: 40px;
 		}
 
 		.shade {
@@ -303,15 +309,13 @@
 
 		#roof {
 			height: 753px;
-			margin-bottom: 50px;
+
 		}
 
-		#example {
-			margin-bottom: 40px;
-		}
 
 		#productDisplay {
-			margin-bottom: 40px
+			margin-bottom: 40px;
+
 		}
 
 		#dowebok {
@@ -324,24 +328,83 @@
 			width: 100%;
 			height: 80px;
 
-			position: relative;
+			position: absolute;
+			;
 			left: 0;
-			top: -772px;
+			top: 0;
 			z-index: 9999;
+			color: #fff;
+
 		}
 
 		.boxx:hover {
-			background: rgba(000, 000, 000, 0.5)
+			background-image: linear-gradient(rgba(3, 5, 252, 0.4), transparent)
 		}
 
-		.product {
-			/* width: 100%; */
+
+		#direction {
+			width: 100%;
+			overflow: hidden;
+			background: #f5f5f5;
+			margin-top: 20px;
+		}
+
+		.cp {
+			position: absolute;
+			left: 496px;
+			top: 68px;
 			overflow: hidden;
 			background: #fff;
+			height: 0px;
+
+		}
+
+		.cp p:hover {
+			background: #305FC9;
+			cursor: pointer;
+		}
+
+		.bbox {
+			width: 1200px;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+
+
+		.swiper-container {
+			width: 100%;
+			height: 100%;
+		}
+
+		.swiper-slide {
+			text-align: center;
+			font-size: 18px;
+			background: #fff;
+			color: #000 !important;
+			position: relative;
+		}
+
+		.dd {
 			position: absolute;
-			left: 38%;
-			top: 80px;
-			z-index: 9999;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			background: rgba(0, 0, 0, 0.4);
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+
+		.nav li {
+			line-height: 80px;
+		}
+
+		.swiper-pagination-bullet swiper-pagination-bullet-active {
+			color: #000;
+		}
+
+		:root {
+			background: #fff !important;
 		}
 	</style>
 </head>
@@ -354,80 +417,50 @@
 			<div class="section">
 				<div class="swiper-container">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide" style="background:url(images/Beijing.png)"></div>
-						<div class="swiper-slide" style="background:url(images/Beijing_two.png)"></div>
-						<div class="swiper-slide" style="background:url(images/Beijing_three.png)"></div>
-						<div class="swiper-slide" style="background:url(images/Beijing_four.png)"></div>
+						<div class="swiper-slide" style="background:url(images/Beijing.png)">
+							<div class="dd"></div>
+						</div>
+						<div class="swiper-slide" style="background:url(images/Beijing_two.png)">
+							<div class="dd"></div>
+						</div>
+						<div class="swiper-slide" style="background:url(images/Beijing_three.png)">
+							<div class="dd"></div>
+						</div>
+						<div class="swiper-slide" style="background:url(images/Beijing_four.png)">
+							<div class="dd"></div>
+						</div>
 					</div>
 					<!-- Add Pagination -->
-					<!-- <div class="swiper-pagination"></div> -->
+					<div class="swiper-pagination"></div>
 					<!-- 下面导航点 -->
 					<!-- Add Arrows -->
-					<div class="swiper-button-next"></div>
-					<div class="swiper-button-prev"></div>
+					<!-- <div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div> -->
 					<!--两个左右切换按钮-->
 
 				</div>
 				<!-- 头部 -->
 				<div class="boxx">
 					<div class="header">
-						<span class="minlogo"><img src="images/minlogo.png" alt="" style="width:55px">恺思睿思</span>
+						<span class="minlogo" style="line-height: 71px;">
+							<img src="images/minlogo.png" alt="" style="width:50px">
+							<img src="images/text.png" alt="" style="width: 110px;">
+						</span>
 						<ul class="nav">
-							<li class="ho" style="text-indent: 22px;color: #fff">产品
-								<div class="triangle_on"></div>
-								<div class="product">
-									<!--  906 495 -->
-									<div class="pr_header">
-										<div class="img">
-											<img src="images/arrows.png" alt=""
-												style="width:40px;height:40px;padding-top: 20px;">
-										</div>
-										<div style="padding-top: 12px">恺思睿思智能销售云平台 <img src="images/arrows.png" alt=""
-												style="width: 40px;height:40px;" class="dispimg"></div>
-									</div>
-									<div class="pr_content" style="overflow: hidden;border-bottom: 1px solid #898989">
-										<div class="pc_left">
-											<span><img src="images/logo.png" alt="" style="width:20px;height:20px">恺思线索
-												<span class="il"><img src="images/logo.png" alt=""></span></span>
-											<ul>
-											<a href="secondary.html"><li>企业查询</li></a>	
-											<a href="secondary.html"><li>高级筛选</li></a>
-											<a href="secondary.html"><li style="margin-bottom: 33px;">智能推荐</li></a>	
-											</ul>
-										</div>
-										<div class="pc_middle">
-											<span><img src="images/logo.png" alt=""
-													style="width:20px;height:20px">恺思触达<span class="il"><img
-														src="images/logo.png" alt=""></span></span>
-											<ul>
-												<li>语音机器人</li>
-												<li>智能呼叫系统</li>
-											</ul>
-										</div>
-										<div class="pc_right">
-											<span><img src="images/logo.png" alt=""
-													style="width:20px;height:20px">恺思CRM<span class="il"><img
-														src="images/logo.png" alt=""></span></span>
-											<ul>
-												<li>客户管理</li>
-												<li>销售自动化</li>
-												<li>销售管理</li>
-											</ul>
-										</div>
-									</div>
-									<div class="pc_footer">
-										<div class="pcf_left">
-											<img src="images/logo.png" alt=""><span>全量企业知识图鉴</span>
-										</div>
-										<div class="pcf_right">
-											<img src="images/logo.png" alt=""><span>恺思AI</span><span
-												style="background:blue;color:#fff;padding: 2px;font-size: 12px;margin-left: 20px;">即将上线</span>
-										</div>
-									</div>
+							<li><a href="#" style="color: #fff;">首页</a></li>
+							<li class="ho" style="text-indent: 48px;">
+								产品
+								<div class="cp">
+									<p style="text-indent:25px;">工作手机</p>
+									<p style="text-indent:25px;">微信管理</p>
+									<p style="text-indent: 8px;padding-left: 5px;padding-right: 5px;">移动呼叫中心</p>
+									<p style="text-indent:25px;">云客系统</p>
+
 								</div>
+
 							</li>
-							<li style="text-indent: 22px;color: #fff" class="ho_two">
-								解决方案
+							<li style="text-indent: 48px;" class="ho_two">
+								行业方案
 								<div class="triangle_two"></div>
 								<div class="solution">
 									<div class="boxso">
@@ -443,7 +476,7 @@
 										</div>
 										<div class="boxso_left">
 											<span
-												style="background: url(images/logoa.png)no-repeat -280px -303px;margin-left: 91px;"></span>
+												style="background: url(images/logoa.png)no-repeat -280px -303px;margin-left: 114px;"></span>
 											<p style="color:#000;line-height:20px;margin-top: 15px">销售预测模型</p>
 											<p style="color:#000;line-height:20px;margin-top: 10px">用大数据和AI，精准预测客户
 											</p>
@@ -454,7 +487,7 @@
 										</div>
 										<div class="boxso_left">
 											<span
-												style="background: url(images/logoa.png)no-repeat -351px -303px;margin-left: 70px;"></span>
+												style="background: url(images/logoa.png)no-repeat -351px -303px;margin-left: 100px;"></span>
 											<p style="color:#000;line-height:20px;margin-top: 15px">市场分析模型</p>
 											<p style="color:#000;line-height:20px;margin-top: 10px">恺思帮您洞悉市场一切</p>
 											<p
@@ -465,25 +498,26 @@
 									</div>
 								</div>
 							</li>
-							<li style="text-indent: 22px;color: #fff" class="ho_sex">
-								关于我们
+							<li style="text-indent: 48px;">代理合作</li>
+							<li style="text-indent: 48px;">售后支持</li>
+							<li style="text-indent: 48px;" class="ho_sex">
+								关于恺思睿思
 								<div class="triangle_sex"></div>
 								<div class="AboutUs">
 
 									<div class="BoxAU">
 
 										<ul>
-											<li>企业介绍</li>
-											<li>投资者</li>
+											<li><a href="introduce.html">企业介绍</a></li>
+
 											<li>加入我们</li>
-											<li>联系我们</li>
+
 										</ul>
 									</div>
 								</div>
 							</li>
-							<li style="text-indent: 22px;color: #fff;"><button>登录</button></li>
-							<li style="text-indent: 22px;color: #fff;"><button
-									style="background:#fff;color:#000">注册</button></li>
+							<li style="text-indent: 48px;margin-left: 30px;"><button>登录</button></li>
+							<li style="text-indent: 10px;"><button style="background:#fff;color:#000">注册</button></li>
 						</ul>
 					</div>
 
@@ -491,115 +525,22 @@
 				<div class="middle">
 					<span>智能营销平台</span>
 					<p>专注中小型成长企业营销管理解决方案</p>
-					<p><button>立即体验</button></p>
+					<p><button>预约演示</button></p>
 				</div>
 			</div>
 		</div>
-		<!-- 产品展示 -->
+		<!-- 业务展示 -->
 		<div id="productDisplay">
 			<div class="section">
 				<!--内容-->
 				<div class="content">
-					<div class="content_header">
-						<span>我们为企业提供从线索挖掘、商机触达、客户管理到成单分析的全流程智能销售解决方案</span>
-						<p>帮助大中小型企业在销售端降低销售成本，提升销售业绩</p>
-					</div>
-					<div class="content_show">
-						<div class="cts_header">
-							<div class="wire_left"></div>
-							<span>产品展示</span>
-							<p style="text-indent: -28px">PRODUCTS SHOW</p>
-							<div class="wire_right"></div>
-						</div>
-						<div class="cts_content">
-							<div class="production">
-								<div class="shade">
-									<p class="lo"><img src="images/house.png" alt=""></p>
-									<p class="explain">CRM</p>
-									<p class="hm">
-										公司利用人工智能、大数据等新代创新技术，
-										面向企业提供“营销自动化”和“销售自动化”
-										一体化的商业智能解决方案，帮助中小企业
-										进行数字化营销智能升级迭代。通过不断挖
-										掘和分析全网信息，构建出全网最全的、超
-										过1. 4亿商业实体的知识图谱，并在此基础
-										上结合NLP、机器学习、算法等领先技术，打
-										造出包含线索平台、销售过程管理、质量度
-										模型、全链路销售渠道的完整解决方案，帮助
-										大中小型企业在销售环节降低成本，有效提升
-										销售业绩。
-									</p>
-									<p><button class="consult" style="margin-bottom: 40px">立即咨询</button></p>
-								</div>
-							</div>
-							<div class="production">
-								<div class="shade">
-									<p class="lo"><img src="images/house.png" alt=""></p>
-									<p class="explain">大数据智能平台</p>
-									<p class="hm">
-										公司利用人工智能、大数据等新代创新技术，
-										面向企业提供“营销自动化”和“销售自动化”
-										一体化的商业智能解决方案，帮助中小企业
-										进行数字化营销智能升级迭代。通过不断挖
-										掘和分析全网信息，构建出全网最全的、超
-										过1. 4亿商业实体的知识图谱，并在此基础
-										上结合NLP、机器学习、算法等领先技术，打
-										造出包含线索平台、销售过程管理、质量度
-										模型、全链路销售渠道的完整解决方案，帮助
-										大中小型企业在销售环节降低成本，有效提升
-										销售业绩。
-									</p>
-									<p><button class="consult" style="margin-bottom: 40px">立即咨询</button></p>
-								</div>
-							</div>
-							<div class="production">
-								<div class="shade">
-									<p class="lo"><img src="images/house.png" alt=""></p>
-									<p class="explain">大数据智能平台</p>
-									<p class="hm">
-										公司利用人工智能、大数据等新代创新技术，
-										面向企业提供“营销自动化”和“销售自动化”
-										一体化的商业智能解决方案，帮助中小企业
-										进行数字化营销智能升级迭代。通过不断挖
-										掘和分析全网信息，构建出全网最全的、超
-										过1. 4亿商业实体的知识图谱，并在此基础
-										上结合NLP、机器学习、算法等领先技术，打
-										造出包含线索平台、销售过程管理、质量度
-										模型、全链路销售渠道的完整解决方案，帮助
-										大中小型企业在销售环节降低成本，有效提升
-										销售业绩。
-									</p>
-									<p><button class="consult" style="margin-bottom: 40px">立即咨询</button></p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- 用户示例 -->
-		<div id="example">
-			<div class="section">
-				<!--展示 -->
-				<div class="exhibition">
-					<div class="exhibition_header">
-						为甚麽KSRS我们是智能领域的开创者
-					</div>
-					<div class="exhibition_content">
-						<ul>
-							<li style="background:url(images/minlogo_on.png);background-size: 100% 100%"></li>
-							<li style="background:url(images/minlogo_two.png);background-size: 100% 100%"></li>
-							<li style="background:url(images/minlogo_sex.png);background-size: 100% 100%"></li>
-							<li
-								style="margin-top: 20px;background:url(images/minlogo_fow.png);background-size: 100% 100%">
-							</li>
-							<li
-								style="margin-top: 20px;background:url(images/minlogo_fieo.png);background-size: 100% 100%">
-							</li>
-							<li
-								style="margin-top: 20px;background:url(images/minlogo_sexw.png);background-size: 100% 100%">
-							</li>
-						</ul>
+					<div class="section_header">恺思睿思专注销售过程管理，帮助企业快速提升销售业绩</div>
+					<div style="text-align: center;">
+						<img src="images/cimg.png" alt="">
+						<img src="images/cimg_on.png" alt="">
+						<p>
+							<img src="images/cimg_sex.png" alt="">
+						</p>
 					</div>
 				</div>
 			</div>
@@ -607,18 +548,66 @@
 		<!-- 公司业务方向 -->
 		<div id="direction">
 			<div class="section">
-				<div class="help">
-					<div class="help_header">
-						帮助您打造全链路一体化智能平台
+
+				<div class="help" style="position:relative">
+
+					<div class="help_left">
+						<img src="images/beifen.png" alt="">
 					</div>
-					<div class="help_content">
-						<div class="helpc_left">
-							<img src="images/boxlogo.png" alt="">
-						</div>
-						<div class="helpc_right">
-							<p>优势，优势</p>
-							<p>我们为企业提供从线索挖掘、商机触达、客户管理到成单分析的全流程智能销售解 决方案<br>帮助大中小型企业在销售端降低销售成本，提升销售业绩</p>
-						</div>
+					<div class="help_right">
+						<strong>
+							恺思睿思智能营销平台
+							<div id="bc"></div>
+						</strong>
+						<p>
+							<span>大数据+定制化外呼解决方案</span>
+						</p>
+						<p>电销团队必选系统，让接通率、意向率迅速提升！</p>
+						<p>
+							<button>点击了解</button>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="section">
+
+				<div class="help">
+					<div class="help_right" id="ksxt">
+						<strong>
+							恺思系统
+							<div id="bc"></div>
+						</strong>
+						<p>
+							<span>大数据+定制化外呼解决方案</span>
+						</p>
+						<p>电销团队必选系统，让接通率、意向率迅速提升！</p>
+						<p>
+							<button>点击了解</button>
+						</p>
+					</div>
+					<div class="help_left">
+						<img src="images/beifen.png" alt="" id="imd">
+					</div>
+				</div>
+			</div>
+			<div class="section">
+
+				<div class="help">
+					<div class="help_left">
+						<img src="images/beifen.png" alt="">
+					</div>
+					<div class="help_right">
+						<strong>
+							恺思系统
+							<div id="bc"></div>
+						</strong>
+						<p>
+							<span>大数据+定制化外呼解决方案</span>
+						</p>
+						<p>电销团队必选系统，让接通率、意向率迅速提升！</p>
+						<p>
+							<button>点击了解</button>
+						</p>
 					</div>
 				</div>
 			</div>
@@ -626,114 +615,147 @@
 		<!-- 产品演示 -->
 		<div id="demonstration">
 			<div class="section">
-				<div class="boxs">
-					<div class="headline">
-						智能销售平台可以帮到您
-					</div>
-					<div class="se_content">
-						<div class="sect_left">
-							产品演示
-						</div>
-						<div class="sect_right">
-							<img src="images/datashow.png" alt="">
-						</div>
-					</div>
+				<div class="section_header" style="letter-spacing:50px;">
+					行业案例
 				</div>
+				<div class="section_content" style="width: 1200px;height: 400px;;overflow: hidden;margin: 0 auto;">
+					<div class="se_oh">
+
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide swiper-no-swiping"
+									style="margin-right: 5px;;background:url(images/minlogo_two.png) -2px;width: 380px !important;height: 442px;background-size: 100% 100%;float: left;">
+								</div>
+								<div class="cc"
+									style="width: 30px;height: 442px;background: #fff;float: left;position: absolute;left: 376px;z-index: 9;">
+								</div>
+								<div class="swiper-slide swiper-no-swiping"
+									style="background:url(images/minlogo_two.png);width: 380px !important;height: 442px;background-size: 100% 100%;float: left;">
+
+								</div>
+								<div class="cc"
+									style="width: 30px;height: 442px;background: #fff;float: left;position: absolute;left: 785px;z-index: 9;">
+								</div>
+								<div class="swiper-slide swiper-no-swiping"
+									style="background:url(images/minlogo_two.png) 28px;width: 380px !important;height: 442px;background-size: 100% 100%;float: left;">
+
+								</div>
+								<div class="cc"
+									style="width: 30px;height: 442px;background: #fff;float: left;position: absolute;left: 1189px;z-index: 9;">
+								</div>
+								<div class="swiper-slide swiper-no-swiping"
+									style="background:url(images/minlogo_two.png) 31px;width: 380px !important;height: 442px;background-size: 100% 100%;float: left;">
+
+								</div>
+
+
+							</div>
+							<!-- Add Pagination -->
+							<!--   <div class="swiper-pagination swiper-pagination-white"></div> -->
+							<!-- Navigation -->
+							<div class="swiper-button-next swiper-button-white" style="color: #305FC9;"></div>
+							<div class="swiper-button-prev swiper-button-white" style="color: #305FC9;"></div>
+						</div>
+
+
+
+					</div>
+
+				</div>
+
 			</div>
 		</div>
 		<!-- 公司简介 -->
 		<div id="brief introduction">
 			<div class="section">
-				<div class="boxs">
-					<div class="sec_header">
-						智能线索平台为企业销售赋能
+				<div class="bbox">
+					<div class="section_header">
+						<h1 style="font-size: 30px;font-weight: bold;">合作伙伴</h1>
 					</div>
-					<div class="sec_content">
-						<div class="sec_left">
-							<img src="images/capacity .png" alt="">
-						</div>
-						<div class="sec_right">
-							<div class="right_img">
-								<img src="images/arrows.png" alt="">
-							</div>
-							<div class="right_text">
-								公司利用人工智能、大数据等新一代创新技术，
-								面向企业提供“营销自动化”和“销售自动化-.
-								体化的商业智能解决方案，帮助中小企业进行
-								数字化营销智能升级迭代。通过不断挖掘和分
-								析全网信息，构建出全网最全的、超过1. 4亿
-								商业实体的知识图谱，并在此基础上结合NLP、
-								机器学习、算法等领先技术，打造出包含线索
-								平台、销售过程管理、质量度模型、全链路销
-								售渠道的完整解决方案，帮助大中小型企业在
-								销售环节降低成本，有效提升销售业绩。
-							</div>
-						</div>
+					<div class="section_con" style="margin-top:40px;margin-bottom: 40px;">
+						<img src="images/kou.png" alt="">
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="section"></div>
+		<div class="section" style="float: left;"></div>
 		<!--尾部 -->
 		<div class="footer">
 			<div class="box_f">
-				<div>
-					<p>产品</p>
-					<ul>
-						<li>KSRS CRM</li>
-						<li>KSRS 智能营销平台</li>
-						<li>KSRS 智能营销机器人</li>
-					</ul>
+				<div class="foo_header" style="border-bottom: 1px solid #898989;overflow: hidden;;">
+					<div class="foh_left" style="float: left;margin-left:0px;">
+						<div>
+							<h1 style="color: #fff;font-size: 15px;margin-left: 8px;color:#fff">快速通道</h1>
+							<ul style="margin-left: 10px;color:#898989">
+								<li>云客声明</li>
+								<li>申请试用</li>
+								<li>常见问题</li>
+							</ul>
+						</div>
+						<div>
+							<h1 style="color: #fff;font-size: 15px;margin-left: 9px;color:#fff">热门产品</h1>
+							<ul style="margin-left: 10px;color:#898989">
+								<li>云客手机</li>
+								<li>微信管理</li>
+								<li>移动呼叫中心</li>
+								<li style="margin-bottom: 30px;">云电销</li>
+							</ul>
+						</div>
+						<div>
+							<h1 style="color: #fff;font-size: 15px;margin-left: 9px;color:#fff">联系我们</h1>
+							<ul style="margin-left: 10px;color:#898989">
+								<li>商务咨询：010 8287 4500</li>
+								<li>售后服务：010 8287 4500</li>
+								<li>地址：北京市海淀区西北旺镇唐家岭路弘祥1989科技文化产业园3号楼3211室</li>
+							</ul>
+						</div>
+					</div>
+					<div class="foh_right" style="float:right;">
+						<div class="fohr_left" style="float: left;margin-top: 50px;margin-right: 10px;">
+							<strong>
+								<h3 style="color: rgb(238, 236, 225);font-size: 24px;font-weight: bold;color:#898989">咨询热线</h3>
+								<p style="margin-top: 8px;">
+									<em style="font-size: 26px;color:#898989">
+										010-8287-4500
+									</em>
+								</p>
+							</strong>
+						</div>
+						<div class="fohr_right" style="float: left;text-align: center;">
+							<p style="font-size: 18px;font-weight: bold;color: rgb(238, 236, 225);color:#898989">关注我们</p>
+							<p>
+								<img src="images/img.png" alt="" style="width: 100px;margin-top: 20px;">
+							</p>
+						</div>
+					</div>
 				</div>
-				<div>
-					解决方案
-				</div>
-				<div>
-					<p>招商加盟</p>
-					<ul>
-						<li>招商加盟</li>
-						<li>服务商咨询</li>
-					</ul>
-				</div>
-				<div>
-					<p>关于我们</p>
-					<ul style="margin-bottom:40px;">
-						<li>公司介绍</li>
-						<li>投资者</li>
-						<li>媒体报道</li>
-						<li>加入我们</li>
-						<li>联系我们</li>
-					</ul>
-				</div>
-				<div>
-					服务热线
+				<div class="foo_f" style="float: left;margin-top: 32px; color: #f6f6f6;letter-spacing:3px">
+					<span style="float: left;color:#898989;font-size: 12px;margin-top: 5px;">版权所有2018北京恺思睿思信息技术有限公司</span>
+					<div style="float: right;margin-left: 93px;color:#898989;font-size: 12px;">
+						<span><img src="images/diannao.png" alt="" style="width: 24px;margin-right: 4px;">电脑版</span>
+						
+
+					</div>
+
 				</div>
 			</div>
 		</div>
-		<!--悬浮框 -->
-		<div class="cuspend">
-			<div class="cuspend_header">
-				在线咨询 <span id='dn' style="cursor: pointer;">X</span>
-			</div>
-			<div class="cuspend_content">
-				<ul>
-					<li><img src="images/logo.png" alt=""><span>产品咨询</span></li>
-					<li><img src="images/logo.png" alt=""><span>产品咨询</span></li>
-					<li><img src="images/logo.png" alt=""><span>产品咨询</span></li>
-				</ul>
-			</div>
+	</div>
+	<!--悬浮框 -->
+	<div class="cuspend">
+		<div class="cuspend_header">
+			<img src="images/yuyin.png" alt="" style="width: 27px;margin-right: 5px;"> 在线咨询 <span id='dn'
+				style="cursor: pointer;">X</span>
 		</div>
-		<!-- 锚点 -->
-		<!-- <div class="anchor"> 
+		<div class="cuspend_content">
 			<ul>
-				<li><a href="#roof">顶部</a></li>
-				<li><a href="#product display">展示</a></li>
-				<li><a href="#example">示例</a></li>
-				<li><a href="#direction">方向</a></li>
-				<li><a href="#demonstration">演示</a></li>
-				<li><a href="#brief introduction">简介</a></li>
+				<li><img src="images/logo.png" alt=""><span>产品咨询</span></li>
+				<li><img src="images/logo.png" alt=""><span>产品咨询</span></li>
+				<li><img src="images/logo.png" alt=""><span>产品咨询</span></li>
 			</ul>
-		</div>  -->
+		</div>
+	</div>
+
 	</div>
 </body>
 
