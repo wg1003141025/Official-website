@@ -336,7 +336,7 @@ input,
             color: #fff;
             letter-spacing:24px;
             text-indent:53px;
-           margin-top: 10px;
+            margin-top: 10px;
         }
         
         .middle {
@@ -358,24 +358,11 @@ input,
             margin: 50px auto;;
         }
         .content_top{
-            width: 100%;
+            width:750px;
             overflow: hidden;
+            margin: 80px auto;
         }
-        .contentp_header{
-            text-align: center;
-            font-size: 27px;
-            font-weight: bold;
-        }
-        .contentp_con{
-            margin-top: 50px;
-            font-size: 16px;
-            color: rgb(89, 89, 89);
-            
-        }
-        .contentp_con p{
-            margin-top: 20px;
-            line-height: 33px;
-        }
+        
         .footer {
 			width: 100%;
 			overflow: hidden;
@@ -408,4 +395,18 @@ input,
         }
         .box_f div:nth-child(5){
             font-size: 18px;
+        }
+        .content_header{
+            width: 100%;
+            overflow: hidden;
+        }
+        .content_header li{
+            float: left;
+            font-size: 18px;
+            margin-left: 20px;
+        }
+        .content_con{
+            margin-top: 30px;
+            font-size: 14px;
+            /* line-height: 40px; */
         }

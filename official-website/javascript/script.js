@@ -19,6 +19,13 @@ $(function () {
 		}, 200)
 
 	})
+	$(".popUp").eq(0).hide()
+	$("#lj").click(function(){
+		$(".popUp").eq(0).show()
+	})
+	$("#gb").click(function(){
+		$(".popUp").eq(0).hide()
+	})
 	var swiper = new Swiper('#roof .swiper-container', {
 		spaceBetween: 30,
 		centeredSlides: true,

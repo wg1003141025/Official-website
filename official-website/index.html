@@ -124,7 +124,7 @@
 		.section:nth-child(2) {
 			background: #fff;
 			width: 100%;
-			/* background: #ff3366; */
+
 			overflow: hidden;
 		}
 
@@ -337,9 +337,9 @@
 
 		}
 
-		.boxx:hover {
+		/* .boxx:hover {
 			background-image: linear-gradient(rgba(3, 5, 252, 0.4), transparent)
-		}
+		} */
 
 
 		#direction {
@@ -406,6 +406,29 @@
 		:root {
 			background: #fff !important;
 		}
+		.popUp{
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			background: rgba(0, 0,0,0.7);
+			position: fixed;
+			left: 0;
+			top: 0;
+			z-index: 11111;
+		}
+		.popUp_content{
+			width: 720px;
+			height: 500px;
+			background: #fff;
+			position: absolute;
+			left: 0;
+			top:0;
+			bottom: 0;
+			right: 0;
+			margin: auto;
+			border-radius: 4px;
+			
+		}
 	</style>
 </head>
 
@@ -467,50 +490,48 @@
 										<div class="boxso_left">
 											<span
 												style="background: url(images/logoa.png)no-repeat -205px -303px;"></span>
-											<p style="color:#000;line-height:20px;margin-top: 15px">企业知识图谱</p>
-											<p style="color:#000;line-height:20px;margin-top: 10px">你想要的企业、数据、关系这里都有</p>
+											<p style="color:#898989;line-height:20px;margin-top: 15px">企业知识图谱</p>
+											<p style="color:#898989;line-height:20px;margin-top: 10px">你想要的企业、数据、关系这里都有</p>
 											<p
-												style="color:#000;line-height:20px;margin-top: 10px;margin-bottom: 10px;">
-												<button>了解详情</button>
+												style="color:#898989;line-height:20px;margin-top: 10px;margin-bottom: 10px;">
+												<button style="color:#898989">了解详情</button>
 											</p>
 										</div>
 										<div class="boxso_left">
 											<span
 												style="background: url(images/logoa.png)no-repeat -280px -303px;margin-left: 114px;"></span>
-											<p style="color:#000;line-height:20px;margin-top: 15px">销售预测模型</p>
-											<p style="color:#000;line-height:20px;margin-top: 10px">用大数据和AI，精准预测客户
+											<p style="color:#898989;line-height:20px;margin-top: 15px">销售预测模型</p>
+											<p style="color:#898989;line-height:20px;margin-top: 10px">用大数据和AI，精准预测客户
 											</p>
 											<p
-												style="color:#000;line-height:20px;margin-top: 10px;margin-bottom: 10px;">
-												<button>了解详情</button>
+												style="color:#898989;line-height:20px;margin-top: 10px;margin-bottom: 10px;">
+												<button style="color:#898989">了解详情</button>
 											</p>
 										</div>
 										<div class="boxso_left">
 											<span
 												style="background: url(images/logoa.png)no-repeat -351px -303px;margin-left: 100px;"></span>
-											<p style="color:#000;line-height:20px;margin-top: 15px">市场分析模型</p>
-											<p style="color:#000;line-height:20px;margin-top: 10px">恺思帮您洞悉市场一切</p>
+											<p style="color:#898989;line-height:20px;margin-top: 15px">市场分析模型</p>
+											<p style="color:#898989;line-height:20px;margin-top: 10px">恺思帮您洞悉市场一切</p>
 											<p
-												style="color:#000;line-height:20px;margin-top: 10px;margin-bottom: 65px;">
-												<button>了解详情</button>
+												style="color:#898989;line-height:20px;margin-top: 10px;margin-bottom: 65px;">
+												<button style="color: #898989;">了解详情</button>
 											</p>
 										</div>
 									</div>
 								</div>
 							</li>
-							<li style="text-indent: 48px;">代理合作</li>
+							<li style="text-indent: 48px;"><a href="cooperation.html" style="color: #fff;">代理合作</a> </li>
 							<li style="text-indent: 48px;">售后支持</li>
 							<li style="text-indent: 48px;" class="ho_sex">
 								关于恺思睿思
 								<div class="triangle_sex"></div>
 								<div class="AboutUs">
-
 									<div class="BoxAU">
-
 										<ul>
 											<li><a href="introduce.html">企业介绍</a></li>
 
-											<li>加入我们</li>
+											<li><a href="joinUs.html"> 加入我们</a></li>
 
 										</ul>
 									</div>
@@ -525,7 +546,34 @@
 				<div class="middle">
 					<span>智能营销平台</span>
 					<p>专注中小型成长企业营销管理解决方案</p>
-					<p><button>预约演示</button></p>
+					<p><button  id="lj">预约演示</button></p>
+				</div>
+			</div>
+			<div class="popUp">
+				<div class="popUp_content">
+					<div class="popUp_header">
+						注册恺思睿思，让销售更高效 <img src="images/guanbi.png" alt="" style="width: 30px;position: relative;left: 127px;top: -20px;cursor: pointer;" id="gb">
+					</div>
+					<div class="popUp_co">
+						<div>
+							<span>您的姓名</span><input type="text" style="margin-left: 20px;">
+						</div>
+						<div>
+							<span>手机号</span><input type="text" style="margin-left: 36px;">
+						</div>
+						<div>
+							<span>公司名称</span><input type="text" style="margin-left: 20px;">
+						</div>
+						<div>
+							<span>您的职位</span><input type="text" style="margin-left: 20px;">
+						</div>
+						<div>
+							<input type="text" style="width: 216px;margin-left: 84px;"><button style="margin-left: 24px;width: 120px;height: 40px;border: none;background: none;background:#325ec7;color: #fff;">获取验证码</button>
+						</div>
+						<div>
+							<button style="width:100%;margin-top: 39px;;height: 50px;background: #325ec7;color: #fff;border: none;border-radius: 4px;">立即提交</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -570,7 +618,6 @@
 				</div>
 			</div>
 			<div class="section">
-
 				<div class="help">
 					<div class="help_right" id="ksxt">
 						<strong>
@@ -645,10 +692,7 @@
 								</div>
 								<div class="swiper-slide swiper-no-swiping"
 									style="background:url(images/minlogo_two.png) 31px;width: 380px !important;height: 442px;background-size: 100% 100%;float: left;">
-
 								</div>
-
-
 							</div>
 							<!-- Add Pagination -->
 							<!--   <div class="swiper-pagination swiper-pagination-white"></div> -->
@@ -656,13 +700,8 @@
 							<div class="swiper-button-next swiper-button-white" style="color: #305FC9;"></div>
 							<div class="swiper-button-prev swiper-button-white" style="color: #305FC9;"></div>
 						</div>
-
-
-
 					</div>
-
 				</div>
-
 			</div>
 		</div>
 		<!-- 公司简介 -->
@@ -713,7 +752,8 @@
 					<div class="foh_right" style="float:right;">
 						<div class="fohr_left" style="float: left;margin-top: 50px;margin-right: 10px;">
 							<strong>
-								<h3 style="color: rgb(238, 236, 225);font-size: 24px;font-weight: bold;color:#898989">咨询热线</h3>
+								<h3 style="color: rgb(238, 236, 225);font-size: 24px;font-weight: bold;color:#898989">
+									咨询热线</h3>
 								<p style="margin-top: 8px;">
 									<em style="font-size: 26px;color:#898989">
 										010-8287-4500
@@ -722,7 +762,8 @@
 							</strong>
 						</div>
 						<div class="fohr_right" style="float: left;text-align: center;">
-							<p style="font-size: 18px;font-weight: bold;color: rgb(238, 236, 225);color:#898989">关注我们</p>
+							<p style="font-size: 18px;font-weight: bold;color: rgb(238, 236, 225);color:#898989">关注我们
+							</p>
 							<p>
 								<img src="images/img.png" alt="" style="width: 100px;margin-top: 20px;">
 							</p>
@@ -730,10 +771,11 @@
 					</div>
 				</div>
 				<div class="foo_f" style="float: left;margin-top: 32px; color: #f6f6f6;letter-spacing:3px">
-					<span style="float: left;color:#898989;font-size: 12px;margin-top: 5px;">版权所有2018北京恺思睿思信息技术有限公司</span>
+					<span
+						style="float: left;color:#898989;font-size: 12px;margin-top: 5px;">版权所有2018北京恺思睿思信息技术有限公司</span>
 					<div style="float: right;margin-left: 93px;color:#898989;font-size: 12px;">
 						<span><img src="images/diannao.png" alt="" style="width: 24px;margin-right: 4px;">电脑版</span>
-						
+
 
 					</div>
 
@@ -745,7 +787,7 @@
 	<div class="cuspend">
 		<div class="cuspend_header">
 			<img src="images/yuyin.png" alt="" style="width: 27px;margin-right: 5px;"> 在线咨询 <span id='dn'
-				style="cursor: pointer;">X</span>
+				style="cursor: pointer;"><img src="images/guanbi.png" alt="" style="width: 16px;"></span>
 		</div>
 		<div class="cuspend_content">
 			<ul>

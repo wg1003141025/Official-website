@@ -495,11 +495,12 @@ html, body {
 .cp p:hover{
     background:#305FC9;
     cursor: pointer;
+    color: #ffff;
 }
 .cp p{
     line-height: 51px !important;
-    color:#898989;
-    font-weight: bold;
+    color:#000;
+    
     display: block;
     width: 100%;;
 }
@@ -513,4 +514,29 @@ html, body {
     text-align: center;
     font-weight: bold;
     line-height: 110px;
+}
+.popUp_header{
+    text-align: center;
+    line-height: 38px;
+    font-size: 28px;
+    color: #3662cb;
+    font-weight: bold;
+    margin-top: 40px;
+    
+}
+.popUp_co{
+    width: 490px;
+    overflow: hidden;
+    margin: 40px auto;
+    text-align: center;
+}
+.popUp_co div{
+    margin-top: 12px;font-size: 16px;
+    color: #898989;
+  
+}
+.popUp_co input{
+    width: 360px;
+    height: 30px;
+    border:1px solid #dcdcdc
 }
