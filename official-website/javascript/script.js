@@ -1,13 +1,15 @@
 $(function () {
-	$(".cuspend_content").eq(0).hide()
+	$(".cuspend_content ul").eq(0).hide()
 	$("#dn").hide()
 	$(".cuspend_header").eq(0).click(function () {
-		$(".cuspend_content").eq(0).show()
+		$(".cuspend_content ul").eq(0).show()
 		$("#dn").show()
 	})
 
 	$("#dn").click(function () {
-		$(".cuspend").eq(0).hide()
+		
+			$(".cuspend").eq(0).hide()
+		
 	})
 	$(".ho").hover(function () {
 		$(".cp").eq(0).animate({

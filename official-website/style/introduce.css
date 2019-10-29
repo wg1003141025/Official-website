@@ -325,7 +325,7 @@ input,
             font-size: 50px;
             color: #fff;
             font-weight: bold;
-            text-shadow: black -5px -5px 6px;
+            
             letter-spacing:13px;
             text-indent: 41px;
             display: inline-block;
@@ -334,7 +334,7 @@ input,
         .middle p:nth-child(2){
             font-size: 18px;
             color: #fff;
-            letter-spacing:24px;
+            letter-spacing:12px;
             text-indent:53px;
            margin-top: 10px;
         }

@@ -111,15 +111,10 @@ input,
 
 		}
 
-		
-        .cp p:hover{
-            background:#305FC9;
-            cursor: pointer;
-            color: #ffff;
-        }
         .cp p{
             line-height: 51px !important;
             color:#000;
+            
             display: block;
             width: 100%;;
         }
@@ -240,7 +235,7 @@ input,
         }
         
         .boxso_left button{
-            border:1px solid #898989;border-radius:5px;color: #898989;
+            border:1px solid #898989;border-radius:5px;color: #000;
         }
         .solution{
             display: none;
@@ -310,9 +305,15 @@ input,
         .ho:hover .triangle_on{
             display: block;
         }
+        .cp p:hover{
+            background:#305FC9;
+            cursor: pointer;
+            color: #ffff;
+        }
         .cp p{
             line-height: 51px !important;
-           
+            color:#000;
+            
             display: block;
             width: 100%;;
         }
@@ -324,7 +325,7 @@ input,
             font-size: 50px;
             color: #fff;
             font-weight: bold;
-           
+            
             letter-spacing:13px;
             text-indent: 41px;
             display: inline-block;
@@ -356,27 +357,7 @@ input,
             overflow: hidden;
             margin: 50px auto;;
         }
-        .content_top{
-            width: 100%;
-            overflow: hidden;
-        }
-        .contentp_header{
-            text-align: center;
-            font-size: 27px;
-            font-weight: bold;
-        }
-        .contentp_con{
-            margin-top: 50px;
-           
-            color: rgb(89, 89, 89);
-            width: 100%;
-            overflow: hidden;
-        }
-        .contentp_con p{
-           font-size: 13px;
-            line-height: 22px;
-            color: #898989;
-        }
+       
         .footer {
 			width: 100%;
 			overflow: hidden;
@@ -409,43 +390,4 @@ input,
         }
         .box_f div:nth-child(5){
             font-size: 18px;
-        }
-        .co_con{
-            margin-top: 10px;
-        }
-        .content_con{
-            width: 100%;
-            overflow: hidden;
-            margin-top: 40px;
-        }
-        .concn_ct{
-            width: 920px;
-            margin: 30px auto;
-        }
-        #d{
-            width: 25%;
-            height: 400px;
-            background: url(../images/beijingtu.png)no-repeat -241px;
-            /* background-size: 100% 100%; */
-            color: #fff;
-            text-align: center;
-            overflow: hidden;
-            float: left;
-        }
-        #d div:nth-child(1){
-            margin-top: 93px;
-            width: 50px;
-            height: 50px;
-            border-bottom: 3px solid #fff;
-           margin-left: 30%;
-           text-align: center;
-        }
-        #xc{
-            height: 80px;
-            overflow: hidden;
-            margin-top: 10px;
-           
-        }
-        #xc h1{
-            font-size: 13px;
         }
