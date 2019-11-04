@@ -5,7 +5,9 @@ $(function () {
 		$(".cuspend_content ul").eq(0).show()
 		$("#dn").show()
 	})
-
+	$(window).keydown((27),function(){
+		$(".popUp").eq(0).hide()
+	})
 
 	$("#dn").click(function () {
 		

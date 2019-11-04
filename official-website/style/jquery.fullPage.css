@@ -329,7 +329,7 @@ html, body {
     overflow: hidden;
     position: absolute;
     left: 0;
-    top: 58px;
+    top: 55px;
 }
 .boxso{
     width: 1100px;
@@ -361,7 +361,7 @@ html, body {
 .AboutUs{
     position: absolute;
     left: 0;
-    top: 61px;
+    top: 60px;
     overflow: hidden;
     background: #fff;
     width: 100%;
