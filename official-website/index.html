@@ -326,8 +326,6 @@
 		}
 
 		.cp {
-
-
 			overflow: hidden;
 			background: #fff;
 			height: 0px;
@@ -344,7 +342,6 @@
 			margin: 0 auto;
 			overflow: hidden;
 		}
-
 
 		.swiper-container {
 			width: 100%;
@@ -431,11 +428,14 @@
 			width: 1200px;
 			margin: 0 auto;
 		}
+
+		#how:hover #re {
+			background: rgba(255, 255, 255, 0.4) !important;
+		}
 	</style>
 </head>
 
 <body>
-
 	<div id="dowebok">
 		<!-- 首部相应说明 -->
 		<div id="roof">
@@ -466,7 +466,7 @@
 				<!-- 头部 -->
 				<div class="boxx">
 					<div class="header">
-						<span class="minlogo" style="line-height: 71px;">
+						<span class="minlogo" style="line-height: 58px;">
 							<img src="images/minlogo.png" alt="" style="width:50px">
 							<img src="images/text.png" alt="" style="width: 110px;">
 						</span>
@@ -479,10 +479,9 @@
 								<a href="" style="color: #fff;">
 									<a href="productDetails.html" style="color: #fff;">产品</a>
 									<div class="cp">
-										<p style="">工作手机</p>
-										<p style="">微信管理</p>
-										<p style="">呼叫中心</p>
-										<p style="">云客系统</p>
+										<p style="">CRM</p>
+										<p style="">智能机器人</p>
+										<p style="">智能营销平台</p>
 									</div>
 							</li>
 							<li style="width:11.6%" class="ho_two">
@@ -540,10 +539,12 @@
 								</div>
 							</li>
 							<li style="margin-left: 30px;"><button>登录</button></li>
-							<li style="text-indent: 10px;"><button style="background:#fff;color:#000">注册</button></li>
+							<li style="text-indent: 10px;">
+								<button style="background:#fff;color:#000" id="zc"><a href="register.html"
+										target="_blank">注册</a></button>
+							</li>
 						</ul>
 					</div>
-
 				</div>
 				<div class="middle">
 					<span>智能营销平台</span>
@@ -563,24 +564,30 @@
 								placeholder="请输入您的姓名">
 						</div>
 						<div>
-							<span>手机号</span><input type="text" style="margin-left: 36px;text-indent: 10px;"
-								placeholder="请输入您的手机号">
+							<span>手机号</span>
+
+							<input type="text" id="phone" maxlength="11"
+								onkeyup="this.value=this.value.replace(/\D/g,'')"
+								style="margin-left: 32px;text-indent: 10px;" placeholder="请输入手机号">
 						</div>
-						<div>
+						<div class="yc">
 							<span>公司名称</span><input type="text" style="margin-left: 20px;text-indent: 10px;"
 								placeholder="请输入您的公司名称">
 						</div>
-						<div>
+						<div class="yc">
 							<span>您的职位</span><input type="text" style="margin-left: 20px;text-indent: 10px;"
 								placeholder="请输入您的职位">
 						</div>
 						<div>
-							<input type="text" style="width: 216px;margin-left: 84px;text-indent: 10px;"><button
+							<input type="text" style="width: 216px;margin-left: 84px;text-indent: 10px;"
+								placeholder="请输入验证码">
+							<button id="hq"
 								style="margin-left: 24px;width: 120px;height: 40px;border: none;background: none;background:#325ec7;color: #fff;">获取验证码</button>
 						</div>
 						<div>
 							<button
-								style="width:100%;margin-top: 39px;;height: 50px;background: #325ec7;color: #fff;border: none;border-radius: 4px;">立即提交</button>
+								style="width:100%;margin-top: 39px;;height: 50px;background: #325ec7;color: #fff;border: none;border-radius: 4px;"
+								id="tj">立即提交</button>
 						</div>
 					</div>
 				</div>
@@ -605,9 +612,7 @@
 		<!-- 公司业务方向 -->
 		<div id="direction">
 			<div class="section">
-
 				<div class="help" style="position:relative">
-
 					<div class="help_left">
 						<img src="images/beifen.png" alt="">
 					</div>
@@ -675,39 +680,41 @@
 					行业案例
 				</div>
 				<div class="section_content" style="width: 1260px;height: 400px;;overflow: hidden;margin: 0 auto;">
-					<div class="se_oh">
-						<div class="swiper-container">
+					<div class="se_oh" style="width: 100%;height: 100%;overflow: hidden;">
+						<div class="swiper-container" id="how">
 							<div class="swiper-wrapper">
-								<div class="swiper-slide swiper-no-swiping" style="width: 33%;margin-left: 8px;">
+								<div class="swiper-slide swiper-no-swiping" style="width: 33%;margin-left: 9px;">
 									<div class="swiper-slide swiper-no-swiping"
-										style="margin-right: 5px;;background:url(images/minlogo_two.png);width: 390px !important;height: 397px;background-size: 100% 100%;float: left;">
+										style="margin-right: 5px;;background:url(images/minlogo_two.png);height: 397px;background-size: 100% 100%;float: left;">
+									</div>
+								</div>
+								<div class="swiper-slide swiper-no-swiping" style="width: 33%;margin-left: 9px;">
+									<div class="swiper-slide swiper-no-swiping"
+										style="background:url(images/logo_two.png);height: 397px;background-size: 100% 100%;float: left;">
 									</div>
 								</div>
 
-								<div class="swiper-slide swiper-no-swiping" style="width: 33%;margin-left: 8px;">
+								<div class="swiper-slide swiper-no-swiping" style="width: 33%;margin-left: 9px;">
 									<div class="swiper-slide swiper-no-swiping"
-										style="background:url(images/minlogo_two.png);width:  390px !important;height: 397px;background-size: 100% 100%;float: left;">
+										style="background:url(images/minlogo_sexw.png);height: 397px;background-size: 100% 100%;float: left;">
 									</div>
 								</div>
-
-								<div class="swiper-slide swiper-no-swiping" style="width: 33%;margin-left: 8px;">
+								<div class="swiper-slide swiper-no-swiping" style="width: 33%;margin-left: 9px;">
 									<div class="swiper-slide swiper-no-swiping"
-										style="background:url(images/minlogo_two.png);width:  390px !important;height: 397px;background-size: 100% 100%;float: left;">
-
+										style="background:url(images/minlogo_on.png) ;height: 397px;background-size: 100% 100%;float: left;">
 									</div>
 								</div>
-
-								<div class="swiper-slide swiper-no-swiping" style="width: 33%;margin-left: 8px;">
-									<div class="swiper-slide swiper-no-swiping"
-										style="background:url(images/minlogo_two.png) ;width:  390px !important;height: 397px;background-size: 100% 100%;float: left;">
-									</div>
-								</div>
-
-								
-
 							</div>
-							<div class="swiper-button-next swiper-button-white" style="color: #305FC9;"></div>
-							<div class="swiper-button-prev swiper-button-white" style="color: #305FC9;"></div>
+							<div id="re"
+								style="width: 70px;height: 70px;position: relative;top: -244px;left: 1183px;background:rgba(255, 255, 255, 0.0);z-index: 999;border-radius: 50%;">
+								<div class="swiper-button-next swiper-button-white"
+									style="color: #305FC9;margin-right: 10px;margin-top: -20px;"></div>
+							</div>
+							<div id="re"
+								style="width: 70px;height: 70px;text-align: center;position: relative;top: -323px;left: 10px;background:rgba(255, 255, 255, 0.0);z-index: 999;border-radius: 50%;">
+								<div class="swiper-button-prev swiper-button-white"
+									style="color: #305FC9;margin-left: 10px;margin-top: -20px;"></div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -743,7 +750,6 @@
 							<li><img src="images/tc.png" alt="" style="width: 80px;margin-left: 78px;"></li>
 							<li><img src="images/hn.png" alt="" style="width: 80px;margin-left: 78px;"></li>
 							<li><img src="images/yl.png" alt="" style="width: 80px;margin-left: 78px;"></li>
-
 						</ul>
 						<p>
 							<img src="images/ah.png" alt="" style="width: 80px;margin-left: 78px;margin-top: 10px;">
@@ -823,10 +829,7 @@
 						style="float: left;color:#898989;font-size: 12px;margin-top: 5px;">版权所有2018北京恺思睿思信息技术有限公司</span>
 					<div style="float: right;margin-left: 93px;color:#898989;font-size: 12px;">
 						<span><img src="images/diannao.png" alt="" style="width: 24px;margin-right: 4px;">电脑版</span>
-
-
 					</div>
-
 				</div>
 			</div>
 		</div>
@@ -845,7 +848,6 @@
 			</ul>
 		</div>
 	</div>
-
 	</div>
 </body>
 
