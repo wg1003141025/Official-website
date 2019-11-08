@@ -12,14 +12,15 @@ $(function () {
 
 	})
 	$(".ho").hover(function () {
-		$(".cp").eq(0).animate({
+		$(".cp").eq(0).stop().animate({
 			height: "151px"
 		}, 100)
+		return false
 	}, function () {
-		$(".cp").eq(0).animate({
+		$(".cp").eq(0).stop().animate({
 			height: "0px"
 		}, 200)
-
+		return false
 
 	})
 
